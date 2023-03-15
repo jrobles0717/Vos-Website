@@ -54,28 +54,30 @@ Large: 1.8
 */
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-html {
-  /* To convert 1rem = 10px */
-  /* font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5%*/
-  /* Percentage of user's browser font-size setting */
+:root {
   font-size: 62.5%;
-  overflow-x: hidden;
-  /* Does NOT work on Safari */
-  /* scroll-behavior: smooth; */
+  /* min-height: 100vh;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  background-image: radial-gradient(ellipse at top left, #7f50e4, #4c05d0);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "inter", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
-
-  /* Only works if there is nothing absolutely positioned in relation to body */
-  overflow-x: hidden;
+  color: #ced4da;
+  background-color: #000000;
 }
