@@ -2,9 +2,11 @@ import classes from "./Videos.module.css";
 
 function Videos() {
   return (
-    <div>
-      <h2 className={classes.title}>Videos</h2>
-    </div>
+    <section className={classes.section}>
+      <div className={classes.container}>
+        <h2 className={classes.title}>Videos</h2>
+      </div>
+    </section>
   );
 }
 
