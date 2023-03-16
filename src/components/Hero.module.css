@@ -60,7 +60,7 @@ Large: 1.8
 */
 
 .section {
-  /* background-color: blanchedalmond; */
+  /* background-image: url("../../img/background.jpg"); */
   padding: 4.8rem 9.6rem 12.8rem;
   height: 100vh;
 }
@@ -77,7 +77,7 @@ Large: 1.8
 }
 
 .img {
-  width: 100%;
+  width: 60%;
 }
 
 .textBox {
@@ -95,6 +95,12 @@ Large: 1.8
 .textOut {
   font-size: 2.4rem;
   font-weight: 500;
+  color: #d41c1c;
+  /* background-color: #d41c1c;
+  background-image: linear-gradient(to top left, #6c6b6a, #d41c1c);
+  background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  text-transform: uppercase;
 }
 
 .containerBtn {
@@ -120,4 +126,20 @@ Large: 1.8
 .btn:active {
   background-image: linear-gradient(to top left, #c92a2a, #6c6b6a);
   color: #262626;
+}
+
+.icons {
+  display: flex;
+  column-gap: 1.6rem;
+}
+
+.icon:link,
+.icon:visited {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.icon:hover,
+.icon:active {
+  color: #c92a2a;
 }
