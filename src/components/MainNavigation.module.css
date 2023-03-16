@@ -80,7 +80,7 @@ Large: 1.8
 .link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #e5e4e2;
+  color: #bbbab8;
   font-size: 1.8rem;
   font-weight: 500;
   transition: all 0.3s;
@@ -88,7 +88,7 @@ Large: 1.8
 
 .link:hover,
 .link:active {
-  color: #bbbab8;
+  color: #929290;
 }
 
 /* .link.cta:link,

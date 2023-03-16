@@ -1,3 +1,4 @@
+import { AiFillAmazonCircle, AiOutlineAmazon } from "react-icons/ai";
 import {
   BsApple,
   BsFacebook,
@@ -33,20 +34,47 @@ function Hero() {
             </a>
           </div>
           <div className={classes.icons}>
-            <a href="#" className={classes.icon}>
+            <a
+              href="https://www.facebook.com/esvosh/"
+              target="_blank"
+              className={classes.icon}
+            >
               <BsFacebook size={18} />
             </a>
-            <a href="#" className={classes.icon}>
+            <a
+              href="https://twitter.com/esvosh"
+              target="_blank"
+              className={classes.icon}
+            >
               <BsTwitter size={18} />
             </a>
-            <a href="#" className={classes.icon}>
+            <a
+              href="https://www.instagram.com/es.vosh/"
+              target="_blank"
+              className={classes.icon}
+            >
               <BsInstagram size={18} />
             </a>
-            <a href="#" className={classes.icon}>
+            <a
+              href="https://open.spotify.com/artist/1D11d1x5X1HQ9govpTp5On?si=GWRNNaKLT5OcztppEqqXUA&nd=1"
+              target="_blank"
+              className={classes.icon}
+            >
               <BsSpotify size={18} />
             </a>
-            <a href="#" className={classes.icon}>
+            <a
+              href="https://music.apple.com/us/artist/vo%C5%9F/1583875289"
+              target="_blank"
+              className={classes.icon}
+            >
               <BsApple size={18} />
+            </a>
+            <a
+              href="https://music.amazon.com/artists/B09F5KYTNW/voş?ref=dm_sh_oWjmMi53AFa05UFgDsZdFY59O"
+              target="_blank"
+              className={classes.icon}
+            >
+              <AiFillAmazonCircle size={22} />
             </a>
           </div>
         </div>

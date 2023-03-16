@@ -25,9 +25,15 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: #ced4da
+- Primary: #e5e4e2
 - Tints: 
-
+#bbbab8 
+#929290
+#878787 
+#6c6b6a 
+#474747 
+#262626 
+#000000
 
 - Shades: 
 
@@ -78,6 +84,6 @@ body {
   font-family: "inter", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #ced4da;
+  color: #bbbab8;
   background-color: #000000;
 }
