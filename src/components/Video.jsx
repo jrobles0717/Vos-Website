@@ -1,10 +1,12 @@
+import "../../css/index.css";
+import "../../css/style.css";
+
 import PropTypes from "prop-types";
 import React from "react";
-import classes from "./Videos.module.css";
 
 function Video({ embedId, title }) {
   return (
-    <div className={classes.containerVideo}>
+    <div className="container-video">
       <iframe
         width="500vh"
         height="315"
@@ -13,7 +15,7 @@ function Video({ embedId, title }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title={title}
-        className={classes.video}
+        className="video"
       ></iframe>
     </div>
   );

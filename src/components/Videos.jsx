@@ -1,12 +1,14 @@
+import "../../css/index.css";
+import "../../css/style.css";
+
 import Video from "./Video";
-import classes from "./Videos.module.css";
 
 function Videos() {
   return (
-    <section className={classes.section} id="videos">
-      <div className={classes.container}>
-        <h2 className={classes.title}>Videos</h2>
-        <div className={classes.containerVideos}>
+    <section className="section-videos" id="videos">
+      <div className="container">
+        <h2 className="title">Videos</h2>
+        <div className="container-videos">
           <Video embedId="UmJEMCqjl3w" title="Saudades" />
           <Video embedId="d2feZqdh2Zg" title="Antinomias" />
         </div>

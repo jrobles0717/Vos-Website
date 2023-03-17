@@ -1,5 +1,9 @@
-import classes from "./MainNavigation.module.css";
-import heroClasses from "./Hero.module.css";
+import "../../css/index.css";
+import "../../css/style.css";
+import "../../css/queries.css";
+
+import { AiOutlineClose, AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
+
 import { useEffect } from "react";
 
 function MainNavigation() {
@@ -24,13 +28,14 @@ function MainNavigation() {
       // Scroll to other links
       if (href !== "#" && href.startsWith("#")) {
         const sectionEl = document.querySelector(href);
+        // console.log(sectionEl);
         sectionEl.scrollIntoView({ behavior: "smooth" });
       }
 
       // Close mobile navigation
-      // if (link.classList.contains("main-nav-link")) {
-      //   headerEl.classList.toggle("nav-open");
-      // }
+      if (link.classList.contains("main-nav-link")) {
+        headerEl.classList.toggle("nav-open");
+      }
     });
   });
 
@@ -38,8 +43,8 @@ function MainNavigation() {
   // Sticky navigation
 
   useEffect(() => {
-    // const sectionHeroEl = document.querySelector("#hero");
-    const sectionHeroEl = document.querySelector(`.${heroClasses.sectionHero}`);
+    const sectionHeroEl = document.querySelector(".section-hero");
+    // const sectionHeroEl = document.querySelector(`.${heroClasses.sectionHero}`);
 
     console.log(sectionHeroEl);
     const obs = new IntersectionObserver(
@@ -85,29 +90,35 @@ function MainNavigation() {
   checkFlexGap();
 
   return (
-    <header className={classes.header}>
-      <nav className={classes.nav}>
-        <ul className={classes.list}>
+    <header className="header">
+      <a href="#" className="icon">
+        <AiOutlineHome size={22} />
+      </a>
+
+      <nav className="main-nav">
+        <ul className="main-nav-list">
           <li>
-            <a className={classes.link} href="#videos">
+            <a className="main-nav-link" href="#videos">
               Videos
             </a>
           </li>
           <li>
-            <a className={classes.link} href="#about">
+            <a className="main-nav-link" href="#about">
               About Me
             </a>
           </li>
           <li>
-            <a
-              className={[classes.link, classes.cta].join(" ")}
-              href="#mailing"
-            >
+            <a className="main-nav-link cta" href="#mailing">
               Mailing List
             </a>
           </li>
         </ul>
       </nav>
+
+      <button className="btn-mobile-nav">
+        <AiOutlineMenu className="icon-mobile-nav" name="menu" />
+        <AiOutlineClose className="icon-mobile-nav" name="close" />
+      </button>
     </header>
   );
 }

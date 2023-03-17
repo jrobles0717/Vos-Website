@@ -1,17 +1,18 @@
-import classes from "./AboutMe.module.css";
+import "../../css/index.css";
+import "../../css/style.css";
 
 function AboutMe() {
   return (
-    <section className={classes.section} id="about">
-      <div className={classes.container}>
-        <h2 className={classes.primaryTitle}>About Me</h2>
-        <div className={classes.containerBox}>
-          <div className={classes.aboutBox}>
+    <section className="section-about" id="about">
+      <div className="container">
+        <h2 className="title">About Me</h2>
+        <div className="container--about-box">
+          <div className="about-box">
             {/* <h3 className={classes.secondaryTitle}>
               I always dreamed beyong the sky
             </h3> */}
-            <h3 className={classes.secondaryTitle}>So, who am I?</h3>
-            <p className={classes.paragraphText}>
+            <h3 className="secondary-title">So, who am I?</h3>
+            <p className="paragraph-text">
               {/* <strong className={classes.firstLetter}>L</strong>orem ipsum */}
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ea
               nemo maxime? In, tenetur laborum autem illo ullam eaque voluptatem
@@ -21,7 +22,7 @@ function AboutMe() {
               repudiandae magni accusamus voluptas eos hic dignissimos tenetur
               porro ex nisi eaque? Odit?
             </p>
-            <p className={classes.paragraphText}>
+            <p className="paragraph-text">
               Dorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
               quis odit quae pariatur corporis debitis sint, maxime ipsam iste
               reprehenderit laborum sapiente quia qui, quod ducimus. Eligendi
@@ -31,17 +32,17 @@ function AboutMe() {
               corrupti distinctio eum praesentium quibusdam culpa!
             </p>
           </div>
-          <div className={classes.gallery}>
-            <figure className={classes.galleryItem}>
+          <div className="grid--gallery">
+            <figure className="gallery-item">
               <img src="../../img/vos-2.jpg" alt="Gallery of Vos photos" />
             </figure>
-            <figure className={classes.galleryItem}>
+            <figure className="gallery-item">
               <img src="../../img/vos-1.jpg" alt="Gallery of Vos photos" />
             </figure>
-            <figure className={classes.galleryItem}>
+            <figure className="gallery-item">
               <img src="../../img/vos-3.jpg" alt="Gallery of Vos photos" />
             </figure>
-            <figure className={classes.galleryItem}>
+            <figure className="gallery-item">
               <img src="../../img/vos-4.jpg" alt="Gallery of Vos photos" />
             </figure>
           </div>

@@ -1,3 +1,6 @@
+import "../../css/index.css";
+import "../../css/style.css";
+
 import { AiFillAmazonCircle, AiOutlineAmazon } from "react-icons/ai";
 import {
   BsApple,
@@ -7,72 +10,70 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 
-import classes from "./Hero.module.css";
-
 function Hero() {
   return (
-    <section className={classes.sectionHero} id="hero">
-      <div className={classes.hero}>
-        <div className={classes.imgBox}>
+    <section className="section-hero" id="hero">
+      <div className="hero">
+        <div className="img-box">
           <picture>
             <img
               src="../../img/vos-img.png"
-              className={classes.img}
+              className="hero-img"
               alt="Vos photo"
             />
           </picture>
         </div>
-        <div className={classes.textBox}>
-          <h1 className={classes.headingPrimary}>VOS</h1>
-          <p className={classes.textOut}>listen now</p>
-          <div className={classes.containerBtn}>
-            <a href="#" className={classes.btn}>
+        <div className="hero-text-box">
+          <h1 className="hero-heading-primary">VOS</h1>
+          <p className="hero-text-out">listen now</p>
+          <div className="hero-container-btn">
+            <a href="#" className="btn">
               stream songs
             </a>
-            <a href="#" className={classes.btn}>
+            <a href="#" className="btn">
               buy songs
             </a>
           </div>
-          <div className={classes.icons}>
+          <div className="hero-icons">
             <a
               href="https://www.facebook.com/esvosh/"
               target="_blank"
-              className={classes.icon}
+              className="icon"
             >
               <BsFacebook size={18} />
             </a>
             <a
               href="https://twitter.com/esvosh"
               target="_blank"
-              className={classes.icon}
+              className="icon"
             >
               <BsTwitter size={18} />
             </a>
             <a
               href="https://www.instagram.com/es.vosh/"
               target="_blank"
-              className={classes.icon}
+              className="icon"
             >
               <BsInstagram size={18} />
             </a>
             <a
               href="https://open.spotify.com/artist/1D11d1x5X1HQ9govpTp5On?si=GWRNNaKLT5OcztppEqqXUA&nd=1"
               target="_blank"
-              className={classes.icon}
+              className="icon"
             >
               <BsSpotify size={18} />
             </a>
             <a
               href="https://music.apple.com/us/artist/vo%C5%9F/1583875289"
               target="_blank"
-              className={classes.icon}
+              className="icon"
             >
               <BsApple size={18} />
             </a>
             <a
               href="https://music.amazon.com/artists/B09F5KYTNW/voş?ref=dm_sh_oWjmMi53AFa05UFgDsZdFY59O"
               target="_blank"
-              className={classes.icon}
+              className="icon"
             >
               <AiFillAmazonCircle size={22} />
             </a>

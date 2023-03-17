@@ -1,20 +1,14 @@
-import classes from "./MailingList.module.css";
+import "../../css/index.css";
+import "../../css/style.css";
 
 function MailingList() {
   return (
-    <section className={classes.section} id="mailing">
-      <div className={classes.container}>
-        <h2 className={classes.primaryTitle}>Mailing List</h2>
-        <div className={classes.ctaBox}>
-          <div className={classes.textBox}>
-            {/* <h3 className={classes.secondaryTitle}>
-              Be the first one to hear my incoming music and more!
-            </h3>
-            <p className={classes.ctaText}>
-              Feel free to hear new style of music with diversity and enjoy the
-              moment!
-            </p> */}
-            <form className={classes.form} name="mailing-list" netlify>
+    <section className="section-mailing" id="mailing">
+      <div className="container">
+        <h2 className="title">Mailing List</h2>
+        <div className="mailing-box">
+          <div className="mailing-text-box">
+            <form className="mailing-form" name="mailing-list" netlify>
               <div>
                 <label for="name">Name</label>
                 <input
@@ -59,7 +53,7 @@ function MailingList() {
                 </select>
               </div>
 
-              <button className={classes.btnForm}>Submit</button>
+              <button className="btn btn--form">Submit</button>
             </form>
           </div>
         </div>
