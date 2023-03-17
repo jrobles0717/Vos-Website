@@ -11,7 +11,7 @@ import classes from "./Hero.module.css";
 
 function Hero() {
   return (
-    <section className={classes.section}>
+    <section className={classes.sectionHero} id="hero">
       <div className={classes.hero}>
         <div className={classes.imgBox}>
           <picture>

@@ -60,8 +60,11 @@ Large: 1.8
 */
 
 .section {
-  padding: 0 9.6rem;
+  /* padding: 0 9.6rem; */
+  /* top / horizontal / bottom */
+  padding: 4.8rem 0 12.8rem;
   min-height: 100vh;
+  /* margin: 6.4rem 0; */
 }
 
 .container {

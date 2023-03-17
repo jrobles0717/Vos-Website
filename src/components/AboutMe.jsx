@@ -2,7 +2,7 @@ import classes from "./AboutMe.module.css";
 
 function AboutMe() {
   return (
-    <section className={classes.section}>
+    <section className={classes.section} id="about">
       <div className={classes.container}>
         <h2 className={classes.primaryTitle}>About Me</h2>
         <div className={classes.containerBox}>
@@ -33,22 +33,16 @@ function AboutMe() {
           </div>
           <div className={classes.gallery}>
             <figure className={classes.galleryItem}>
-              <img src="../../img/gallery-1.jpg" alt="Gallery of Vos photos" />
+              <img src="../../img/vos-2.jpg" alt="Gallery of Vos photos" />
             </figure>
             <figure className={classes.galleryItem}>
-              <img src="../../img/gallery-2.jpg" alt="Gallery of Vos photos" />
+              <img src="../../img/vos-1.jpg" alt="Gallery of Vos photos" />
             </figure>
             <figure className={classes.galleryItem}>
-              <img src="../../img/gallery-3.jpg" alt="Gallery of Vos photos" />
+              <img src="../../img/vos-3.jpg" alt="Gallery of Vos photos" />
             </figure>
             <figure className={classes.galleryItem}>
-              <img src="../../img/gallery-4.jpg" alt="Gallery of Vos photos" />
-            </figure>
-            <figure className={classes.galleryItem}>
-              <img src="../../img/gallery-5.jpg" alt="Gallery of Vos photos" />
-            </figure>
-            <figure className={classes.galleryItem}>
-              <img src="../../img/gallery-6.jpg" alt="Gallery of Vos photos" />
+              <img src="../../img/vos-4.jpg" alt="Gallery of Vos photos" />
             </figure>
           </div>
         </div>
