@@ -1,3 +1,191 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/****************************/
+/* BELOW 1344px (Smaller desktops) */
+/****************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .hero-heading-primary {
+    font-size: 8.6rem;
+  }
+
+  .hero-text-out {
+    font-size: 2.2rem;
+  }
+
+  .secondary-title {
+    font-size: 4rem;
+    /* font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.5px; */
+  }
+
+  .paragraph-text {
+    font-size: 1.7rem;
+    line-height: 1.7;
+  }
+
+  .mailing-form {
+    /* grid-column: 2 / 3;
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3.2rem; */
+    row-gap: 2rem;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  .mailing-form label {
+    font-size: 1.9rem;
+    /* font-weight: 600; */
+    margin-bottom: 1.1rem;
+  }
+
+  .mailing-form input,
+  .mailing-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 2.1rem;
+  }
+
+  .btn--form,
+  .btn--form:link,
+  .btn--form:visited {
+    font-size: 1.9rem;
+    padding: 1.6rem 3.2rem;
+    margin: 3.2rem 0 3rem;
+  }
+}
+
+/****************************/
+/* BELOW 1200px (Landscape Tablets) */
+/****************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+
+  .main-nav-list {
+    gap: 3.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.7rem;
+  }
+
+  .main-nav-link.cta:link,
+  .main-nav-link.cta:visited {
+    padding: 1rem 2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .hero-heading-primary {
+    font-size: 8.4rem;
+  }
+
+  .hero-text-out {
+    font-size: 2rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.7rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .section-videos {
+    padding: 7rem 0;
+  }
+
+  .container-videos {
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr;
+  }
+
+  .container-video {
+    width: 50%;
+    margin: 0 auto;
+    /* margin-left: 20%; */
+  }
+
+  .secondary-title {
+    font-size: 3.8rem;
+    /* font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.5px; */
+  }
+
+  .paragraph-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
+  .mailing-form {
+    /* grid-column: 2 / 3;
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3.2rem; */
+    row-gap: 1.8rem;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  .mailing-form label {
+    font-size: 1.8rem;
+    /* font-weight: 600; */
+    margin-bottom: 1rem;
+  }
+
+  .mailing-form input,
+  .mailing-form select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .btn--form,
+  .btn--form:link,
+  .btn--form:visited {
+    font-size: 1.8rem;
+    padding: 1.4rem 3rem;
+    margin: 3rem 0 2.8rem;
+  }
+}
+
+/****************************/
+/* BELOW 1040px (Landscape Tablets Smaller) */
+/****************************/
+
+@media (max-width: 65em) {
+  .secondary-title {
+    font-size: 3.6rem;
+    /* font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.5px; */
+  }
+
+  .paragraph-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .grid--gallery {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
 /****************************/
 /* BELOW 944px (Tablets) */
 /****************************/
@@ -15,7 +203,7 @@
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     position: absolute;
@@ -71,6 +259,56 @@
 
   .main-nav-link:hover,
   .main-nav-link:active {
-    color: #cf711f;
+    color: #929290;
+  }
+
+  .secondary-title {
+    font-size: 3.6rem;
+  }
+
+  .paragraph-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .grid--gallery {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  .hero {
+    gap: 1.8rem;
+  }
+
+  .hero-heading-primary {
+    font-size: 7.4rem;
+  }
+
+  .hero-text-out {
+    font-size: 1.8rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.6rem;
+    padding: 0.7rem 1.1rem;
+  }
+
+  .mailing-form {
+    row-gap: 1.8rem;
+  }
+
+  .mailing-form input,
+  .mailing-form select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.9rem;
+    margin-bottom: 1.6rem;
+  }
+
+  /****************************/
+  /* BELOW 704px (Smaller Tablets) */
+  /****************************/
+
+  @media (max-width: 44em) {
   }
 }
