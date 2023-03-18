@@ -30,6 +30,8 @@ function MainNavigation() {
       link.addEventListener("click", function (e) {
         e.preventDefault();
         const href = link.getAttribute("href");
+        console.log(link);
+        console.log(link.getAttribute("class"));
 
         // Scroll back to top
         if (href === "#") {
