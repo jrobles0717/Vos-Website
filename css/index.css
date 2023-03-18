@@ -140,6 +140,7 @@ body {
 .paragraph-text {
   font-size: 1.8rem;
   line-height: 1.6;
+  text-indent: 5rem;
   color: #e5e4e2;
   font-weight: 400;
 }
