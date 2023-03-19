@@ -2,58 +2,48 @@ import "../../css/index.css";
 import "../../css/style.css";
 import "../../css/queries.css";
 
-import { AiOutlineClose, AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
 function MainNavigation() {
-  const [navToggle, setNavToggle] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const mobileNavHandler = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const navLinkHandler = (e) => {
+    ///////////////////////////////////////////////////////////
+    // Smooth scrolling animation
+
+    e.preventDefault();
+    const href = e.target.getAttribute("href");
+    console.log(e.target);
+    console.log(e.target.getAttribute("class"));
+
+    // Scroll back to top
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    // Scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      // console.log(sectionEl);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     // Set current year
     const yearEl = document.querySelector(".year");
     const currentYear = new Date().getFullYear();
     yearEl.textContent = currentYear;
-
-    // Make mobile navigation work
-    const btnNavEl = document.querySelector(".btn-mobile-nav");
-    const headerEl = document.querySelector(".header");
-    btnNavEl.addEventListener("click", function () {
-      headerEl.classList.toggle("nav-open");
-    });
-
-    ///////////////////////////////////////////////////////////
-    // Smooth scrolling animation
-
-    const allLinks = document.querySelectorAll("a:link");
-
-    allLinks.forEach(function (link) {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const href = link.getAttribute("href");
-        console.log(link);
-        console.log(link.getAttribute("class"));
-
-        // Scroll back to top
-        if (href === "#") {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        }
-
-        // Scroll to other links
-        if (href !== "#" && href.startsWith("#")) {
-          const sectionEl = document.querySelector(href);
-          // console.log(sectionEl);
-          sectionEl.scrollIntoView({ behavior: "smooth" });
-        }
-
-        // Close mobile navigation
-        if (link.classList.contains("main-nav-link")) {
-          headerEl.classList.toggle("nav-open");
-        }
-      });
-    });
 
     ///////////////////////////////////////////////////////////
     // Sticky navigation
@@ -105,7 +95,7 @@ function MainNavigation() {
   }, []);
 
   return (
-    <header className="header">
+    <header className={`header ${isOpen && "nav-open"}`}>
       {/* <a href="#" className="icon">
         <AiOutlineHome size={22} />
       </a> */}
@@ -113,29 +103,37 @@ function MainNavigation() {
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
-            <a className="main-nav-link" href="#">
+            <a className="main-nav-link" href="#" onClick={navLinkHandler}>
               Home
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="#videos">
+            <a
+              className="main-nav-link"
+              href="#videos"
+              onClick={navLinkHandler}
+            >
               Videos
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="#about">
+            <a className="main-nav-link" href="#about" onClick={navLinkHandler}>
               About Me
             </a>
           </li>
           <li>
-            <a className="main-nav-link cta" href="#mailing">
+            <a
+              className="main-nav-link cta"
+              href="#mailing"
+              onClick={navLinkHandler}
+            >
               Mailing List
             </a>
           </li>
         </ul>
       </nav>
 
-      <button className="btn-mobile-nav">
+      <button className={"btn-mobile-nav"} onClick={mobileNavHandler}>
         <AiOutlineMenu className="icon-mobile-nav" name="menu" />
         <AiOutlineClose className="icon-mobile-nav" name="close" />
       </button>

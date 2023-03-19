@@ -39,6 +39,7 @@ function Hero() {
               href="https://www.facebook.com/esvosh/"
               target="_blank"
               className="icon"
+              onClick={() => {}}
             >
               <BsFacebook size={18} />
             </a>
