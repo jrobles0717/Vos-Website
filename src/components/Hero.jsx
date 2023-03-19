@@ -41,42 +41,45 @@ function Hero() {
               className="icon"
               onClick={() => {}}
             >
-              <BsFacebook size={18} />
+              <BsFacebook size={18} className="icon--component" />
             </a>
             <a
               href="https://twitter.com/esvosh"
               target="_blank"
               className="icon"
             >
-              <BsTwitter size={18} />
+              <BsTwitter size={18} className="icon--component" />
             </a>
             <a
               href="https://www.instagram.com/es.vosh/"
               target="_blank"
               className="icon"
             >
-              <BsInstagram size={18} />
+              <BsInstagram size={18} className="icon--component" />
             </a>
             <a
               href="https://open.spotify.com/artist/1D11d1x5X1HQ9govpTp5On?si=GWRNNaKLT5OcztppEqqXUA&nd=1"
               target="_blank"
               className="icon"
             >
-              <BsSpotify size={18} />
+              <BsSpotify size={18} className="icon--component" />
             </a>
             <a
               href="https://music.apple.com/us/artist/vo%C5%9F/1583875289"
               target="_blank"
               className="icon"
             >
-              <BsApple size={18} />
+              <BsApple size={18} className="icon--component" />
             </a>
             <a
               href="https://music.amazon.com/artists/B09F5KYTNW/voş?ref=dm_sh_oWjmMi53AFa05UFgDsZdFY59O"
               target="_blank"
               className="icon"
             >
-              <AiFillAmazonCircle size={22} />
+              <AiFillAmazonCircle
+                size={22}
+                className="icon--component icon--component-amazon"
+              />
             </a>
           </div>
         </div>

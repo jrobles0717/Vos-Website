@@ -1,5 +1,3 @@
-import "../css/App.css";
-
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";

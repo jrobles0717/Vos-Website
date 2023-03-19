@@ -169,7 +169,7 @@ Large: 1.8
 .section-hero {
   /* background-image: url("../../img/background.jpg"); */
   padding: 4.8rem 0 9.6rem 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* margin-bottom: 6.4rem; */
 }
 
@@ -237,7 +237,7 @@ Large: 1.8
 
 .section-videos {
   padding: 9.6rem 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .container-videos {
@@ -264,7 +264,7 @@ Large: 1.8
 
 .section-about {
   padding: 9.6rem 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .container--about-box {
@@ -327,7 +327,7 @@ Large: 1.8
 
 .section-mailing {
   padding: 9.6rem 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .mailing-text-box {

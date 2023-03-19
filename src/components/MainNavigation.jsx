@@ -32,7 +32,7 @@ function MainNavigation() {
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
-      // console.log(sectionEl);
+      console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
