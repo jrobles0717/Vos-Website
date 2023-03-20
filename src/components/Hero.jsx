@@ -1,18 +1,45 @@
 import "../../css/index.css";
 import "../../css/style.css";
 
-import { AiFillAmazonCircle, AiOutlineAmazon } from "react-icons/ai";
 import {
-  BsApple,
+  BsCurrencyExchange,
   BsFacebook,
   BsInstagram,
-  BsSpotify,
+  BsTiktok,
   BsTwitter,
+  BsYoutube,
 } from "react-icons/bs";
 
+import { AiOutlineMail } from "react-icons/ai";
+import BuyOptions from "./BuyOptions";
+import { FaStream } from "react-icons/fa";
+import StreamOptions from "./StreamOptions";
+import { useState } from "react";
+
 function Hero() {
+  const [isStreamBtn, setIsStreamBtn] = useState(false);
+  const [isBuyBtn, setIsBuyBtn] = useState(false);
+
+  const StreamBtnHandler = () => {
+    if (isBuyBtn) {
+      setIsBuyBtn(!isBuyBtn);
+      setIsStreamBtn(!isStreamBtn);
+    } else {
+      setIsStreamBtn(!isStreamBtn);
+    }
+  };
+
+  const BuyBtnHandler = () => {
+    if (isStreamBtn) {
+      setIsStreamBtn(!isStreamBtn);
+      setIsBuyBtn(!isBuyBtn);
+    } else {
+      setIsBuyBtn(!isBuyBtn);
+    }
+  };
+
   return (
-    <section className="section-hero" id="hero">
+    <section className="section-hero">
       <div className="hero">
         <div className="img-box">
           <picture>
@@ -27,13 +54,39 @@ function Hero() {
           <h1 className="hero-heading-primary">VOS</h1>
           <p className="hero-text-out">listen now</p>
           <div className="hero-container-btn">
-            <a href="#" className="btn">
-              stream songs
-            </a>
-            <a href="#" className="btn">
-              buy songs
-            </a>
+            <div className="option-container-btn">
+              <button
+                className={`btn btn--options ${
+                  isStreamBtn ? "options-btn--active" : ""
+                }`}
+                onClick={StreamBtnHandler}
+              >
+                <div className="btn--options-container">
+                  <FaStream size={20} />
+                  <span className="name-options-btn">stream songs</span>
+                </div>
+              </button>
+              <StreamOptions
+                active={isStreamBtn ? "stream-options--active" : ""}
+              />
+            </div>
+            <div className="option-container-btn">
+              <button
+                className={`btn btn--options cta--options ${
+                  isBuyBtn ? "options-btn--active" : ""
+                }`}
+                onClick={BuyBtnHandler}
+              >
+                <div className="btn--options-container">
+                  <BsCurrencyExchange size={20} />
+                  <span className="name-options-btn">buy songs</span>
+                </div>
+              </button>
+              <BuyOptions active={isBuyBtn ? "stream-options--active" : ""} />
+            </div>
           </div>
+          {/* {<BuyOptions active={isBuyBtn ? "stream-options--active" : ""} />}
+          <StreamOptions active={isStreamBtn ? "stream-options--active" : ""} /> */}
           <div className="hero-icons">
             <a
               href="https://www.facebook.com/esvosh/"
@@ -41,45 +94,42 @@ function Hero() {
               className="icon"
               onClick={() => {}}
             >
-              <BsFacebook size={18} className="icon--component" />
+              <BsFacebook size={22} className="icon--component" />
             </a>
             <a
               href="https://twitter.com/esvosh"
               target="_blank"
               className="icon"
             >
-              <BsTwitter size={18} className="icon--component" />
+              <BsTwitter size={22} className="icon--component" />
             </a>
             <a
               href="https://www.instagram.com/es.vosh/"
               target="_blank"
               className="icon"
             >
-              <BsInstagram size={18} className="icon--component" />
+              <BsInstagram size={22} className="icon--component" />
             </a>
             <a
-              href="https://open.spotify.com/artist/1D11d1x5X1HQ9govpTp5On?si=GWRNNaKLT5OcztppEqqXUA&nd=1"
+              href="https://www.tiktok.com/@esvosh"
               target="_blank"
               className="icon"
             >
-              <BsSpotify size={18} className="icon--component" />
+              <BsTiktok size={22} className="icon--component" />
             </a>
             <a
-              href="https://music.apple.com/us/artist/vo%C5%9F/1583875289"
+              href="https://www.youtube.com/channel/UCBJTfaNRAmX97_LgTlhRIIA"
               target="_blank"
               className="icon"
             >
-              <BsApple size={18} className="icon--component" />
+              <BsYoutube size={24} className="icon--component" />
             </a>
             <a
-              href="https://music.amazon.com/artists/B09F5KYTNW/voş?ref=dm_sh_oWjmMi53AFa05UFgDsZdFY59O"
+              href="mailto:esvoshmusic@gmail.com"
               target="_blank"
               className="icon"
             >
-              <AiFillAmazonCircle
-                size={22}
-                className="icon--component icon--component-amazon"
-              />
+              <AiOutlineMail size={24} className="icon--component" />
             </a>
           </div>
         </div>
