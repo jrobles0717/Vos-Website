@@ -188,6 +188,7 @@ Large: 1.8
   /* width: 50%;
   margin: 0 auto; */
   width: 60%;
+  height: auto;
   margin-left: 20%;
 }
 
@@ -433,6 +434,6 @@ Large: 1.8
 .copyright {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #6c6b6a;
+  color: #bbbab8;
   margin-top: auto;
 }

@@ -1,7 +1,4 @@
-import { BsApple, BsSpotify } from "react-icons/bs";
-import { FaAmazon, FaDeezer, FaItunesNote } from "react-icons/fa";
-
-import { SiTidal } from "react-icons/si";
+import { FaAmazon, FaItunesNote } from "react-icons/fa";
 
 function BuyOptions({ active }) {
   return (
