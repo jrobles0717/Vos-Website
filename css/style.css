@@ -204,6 +204,7 @@ Large: 1.8
   font-weight: 700;
   margin-bottom: 2.4rem;
   color: #929290;
+  text-transform: uppercase;
 
   display: inline-block;
   background-image: linear-gradient(to right, #e5e4e2, #878787);

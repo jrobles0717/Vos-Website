@@ -43,15 +43,11 @@ function Hero() {
       <div className="hero">
         <div className="img-box">
           <picture>
-            <img
-              src="../../img/vos-img.png"
-              className="hero-img"
-              alt="Vos photo"
-            />
+            <img src="img/vos-img.png" className="hero-img" alt="Voş photo" />
           </picture>
         </div>
         <div className="hero-text-box">
-          <h1 className="hero-heading-primary">VOSH</h1>
+          <h1 className="hero-heading-primary">Voş</h1>
           <p className="hero-text-out">listen now</p>
           <div className="hero-container-btn">
             <div className="option-container-btn">
