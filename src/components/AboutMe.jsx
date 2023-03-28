@@ -14,22 +14,43 @@ function AboutMe() {
             <h3 className="secondary-title">So, who am I?</h3>
             <p className="paragraph-text">
               {/* <strong className={classes.firstLetter}>L</strong>orem ipsum */}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ea
-              nemo maxime? In, tenetur laborum autem illo ullam eaque voluptatem
-              iure esse eius voluptate dicta odit voluptatibus. Provident, vero
-              eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Est animi at quidem dolore soluta officia doloribus, iste
-              repudiandae magni accusamus voluptas eos hic dignissimos tenetur
-              porro ex nisi eaque? Odit?
+              <span className="paragraph-text--bold">Voş</span>, pronounced
+              “vosh”, was born and raised in San Juan, Puerto Rico. He began
+              writing songs when he was 16 years old and, after 11 years of
+              individually connecting with music & lyrics, is finally exposing
+              himself as an artist. Voş’ music style lands into experimental
+              music and incorporates elements like art and dance as a compliment
+              to lead listeners through the story of his songs. Similarly, his
+              future projects include fusions with genres such as{" "}
+              <span className="paragraph-text--bold">Electronic</span>,{" "}
+              <span className="paragraph-text--bold">House</span>,{" "}
+              <span className="paragraph-text--bold">Chillwave</span>,{" "}
+              <span className="paragraph-text--bold">Jazz</span>,{" "}
+              <span className="paragraph-text--bold">Rock</span>, and{" "}
+              <span className="paragraph-text--bold">R&B</span>. Although the
+              themes in his songs are based on life experiences, he takes the
+              time to interpret his lyrics in a generic way so that anyone can
+              identify with them and give them their own interpretation
+              according to their own experiences.
             </p>
             <p className="paragraph-text">
-              Dorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              quis odit quae pariatur corporis debitis sint, maxime ipsam iste
-              reprehenderit laborum sapiente quia qui, quod ducimus. Eligendi
-              voluptatem ea blanditiis. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Voluptatem iure aspernatur in velit hic officiis
-              pariatur at officia neque voluptates error, vitae, adipisci minus
-              corrupti distinctio eum praesentium quibusdam culpa!
+              His first House single,{" "}
+              <span className="paragraph-text--bold">ANTINOMIAS</span>, a
+              mixture of upbeat sounds and tropical elements, expresses the
+              contradictions of love: what is said versus what is done. Now, voş
+              most recent single,{" "}
+              <span className="paragraph-text--bold">SAUDADES</span>, reflects
+              on the feeling of missing someone who is far away or no longer
+              near. Through a sublime and intimate sound, listeners will
+              encounter strong feelings of nostalgia. These songs have been
+              worked with producer{" "}
+              <span className="paragraph-text--bold">William Russell</span> and
+              himself. At the moment, his taking the time to learn more about
+              music production and working with many projects a long friends so
+              eventually you’ll hear more about it. As a work in progress, he’s
+              open to collaborate with producers and artists so feel free to
+              email him or write him on his social media if you’re interested to
+              create music for the future that is now.
             </p>
           </div>
           <div className="grid--gallery">

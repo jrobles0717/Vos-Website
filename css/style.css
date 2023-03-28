@@ -204,6 +204,12 @@ Large: 1.8
   font-weight: 700;
   margin-bottom: 2.4rem;
   color: #929290;
+
+  display: inline-block;
+  background-image: linear-gradient(to right, #e5e4e2, #878787);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
 }
 .hero-text-out {
   font-size: 2.4rem;
@@ -283,6 +289,7 @@ Large: 1.8
   gap: 4.8rem;
   padding: 1.6rem;
   justify-items: center;
+  align-items: center;
 }
 
 .about-box {

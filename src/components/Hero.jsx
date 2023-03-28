@@ -51,7 +51,7 @@ function Hero() {
           </picture>
         </div>
         <div className="hero-text-box">
-          <h1 className="hero-heading-primary">VOS</h1>
+          <h1 className="hero-heading-primary">VOSH</h1>
           <p className="hero-text-out">listen now</p>
           <div className="hero-container-btn">
             <div className="option-container-btn">
