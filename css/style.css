@@ -42,6 +42,8 @@ Large: 1.8
 #c92a2a (more darker)
 #d41c1c
 
+#37b24d
+
 - Greys
 
 #888
@@ -53,6 +55,7 @@ Large: 1.8
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
+3px
 
 --- 07 WHITESPACE
 
@@ -385,9 +388,22 @@ Large: 1.8
   font-family: inherit;
   color: #474747;
   border: none;
+  border-bottom: 3px solid transparent;
   background-color: #e5e4e2;
   border-radius: 2px;
   box-shadow: 0 0.3rem 1rem rgba(255, 255, 255, 0.6);
+}
+
+.mailing-form input:focus,
+.mailing-form select:focus {
+  outline: none;
+  box-shadow: 0 0.6rem 2rem rgba(255, 255, 255, 0.6);
+  border-bottom: 3px solid #37b24d;
+}
+
+.mailing-form input:focus:invalid,
+.mailing-form select:focus:invalid {
+  border-bottom: 3px solid #c92a2a;
 }
 
 .mailing-form input::placeholder {
