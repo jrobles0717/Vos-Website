@@ -1,6 +1,11 @@
 import "../../css/index.css";
 import "../../css/style.css";
 
+import vosImg1 from "../../img/vos-1.jpg";
+import vosImg2 from "../../img/vos-2.jpg";
+import vosImg3 from "../../img/vos-3.jpg";
+import vosImg4 from "../../img/vos-4.jpg";
+
 function AboutMe() {
   return (
     <section className="section-about" id="about">
@@ -55,16 +60,16 @@ function AboutMe() {
           </div>
           <div className="grid--gallery">
             <figure className="gallery-item">
-              <img src="/img/vos-2.jpg" alt="Gallery of Voş photos" />
+              <img src={vosImg2} alt="Gallery of Voş photos" />
             </figure>
             <figure className="gallery-item">
-              <img src="/img/vos-1.jpg" alt="Gallery of Voş photos" />
+              <img src={vosImg1} alt="Gallery of Voş photos" />
             </figure>
             <figure className="gallery-item">
-              <img src="/img/vos-3.jpg" alt="Gallery of Voş photos" />
+              <img src={vosImg3} alt="Gallery of Voş photos" />
             </figure>
             <figure className="gallery-item">
-              <img src="/img/vos-4.jpg" alt="Gallery of Voş photos" />
+              <img src={vosImg4} alt="Gallery of Voş photos" />
             </figure>
           </div>
         </div>

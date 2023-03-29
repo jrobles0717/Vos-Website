@@ -44,12 +44,7 @@ function Hero() {
       <div className="hero">
         <div className="img-box">
           <picture>
-            <img
-              // src={process.env.PUBLIC_URL + "/img/vos-img.png"}
-              src={vosImg}
-              className="hero-img"
-              alt="Voş photo"
-            />
+            <img src={vosImg} className="hero-img" alt="Voş photo" />
           </picture>
         </div>
         <div className="hero-text-box">
