@@ -8,9 +8,9 @@ function MailingList() {
         <h2 className="title">Mailing List</h2>
         <div className="mailing-box">
           <div className="mailing-text-box">
-            <form className="mailing-form" name="mailing-list" netlify>
+            <form className="mailing-form" name="mailing-list" netlify="true">
               <div>
-                <label for="name">Name</label>
+                <label htmlFor="name">Name</label>
                 <input
                   id="name"
                   type="text"
@@ -20,7 +20,7 @@ function MailingList() {
                 />
               </div>
               <div>
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   id="email"
                   type="email"
@@ -30,7 +30,7 @@ function MailingList() {
                 />
               </div>
               <div>
-                <label for="city">City</label>
+                <label htmlFor="city">City</label>
                 <input
                   id="city"
                   type="text"
@@ -40,7 +40,9 @@ function MailingList() {
                 />
               </div>
               <div>
-                <label for="select-where">Where did you hear about me?</label>
+                <label htmlFor="select-where">
+                  Where did you hear about me?
+                </label>
                 <select id="select-where" name="select-where" required>
                   <option value="">Please choose one option:</option>
                   <option value="spotify">Spotify</option>

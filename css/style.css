@@ -188,7 +188,7 @@ Large: 1.8
   /* width: 50%;
   margin: 0 auto; */
   width: 60%;
-  height: auto;
+  /* height: auto; */
   margin-left: 20%;
 }
 
@@ -209,6 +209,7 @@ Large: 1.8
   display: inline-block;
   background-image: linear-gradient(to right, #e5e4e2, #878787);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
 }
