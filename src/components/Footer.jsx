@@ -15,8 +15,8 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <p className="copyright">
-          Copyright &copy; <span className="year">2028</span> by Vosh. All
-          rights reserved.
+          Copyright &copy; <span className="year">2028</span> by Voş. All rights
+          reserved.
         </p>
       </div>
     </footer>
