@@ -16,7 +16,7 @@ function AboutMe() {
             {/* <h3 className={classes.secondaryTitle}>
               I always dreamed beyong the sky
             </h3> */}
-            <h3 className="secondary-title">So, who am I?</h3>
+            <h3 className="secondary-title">So, who is he?</h3>
             <p className="paragraph-text">
               {/* <strong className={classes.firstLetter}>L</strong>orem ipsum */}
               <span className="paragraph-text--bold">Voş</span>, pronounced
