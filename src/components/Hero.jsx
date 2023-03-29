@@ -15,6 +15,7 @@ import BuyOptions from "./BuyOptions";
 import { FaStream } from "react-icons/fa";
 import StreamOptions from "./StreamOptions";
 import { useState } from "react";
+import vosImg from "../../img/vos-img.png";
 
 function Hero() {
   const [isStreamBtn, setIsStreamBtn] = useState(false);
@@ -44,7 +45,8 @@ function Hero() {
         <div className="img-box">
           <picture>
             <img
-              src={process.env.PUBLIC_URL + "/img/vos-img.png"}
+              // src={process.env.PUBLIC_URL + "/img/vos-img.png"}
+              src={vosImg}
               className="hero-img"
               alt="Voş photo"
             />
