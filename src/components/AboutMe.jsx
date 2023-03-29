@@ -55,16 +55,16 @@ function AboutMe() {
           </div>
           <div className="grid--gallery">
             <figure className="gallery-item">
-              <img src="./img/vos-2.jpg" alt="Gallery of Voş photos" />
+              <img src="/img/vos-2.jpg" alt="Gallery of Voş photos" />
             </figure>
             <figure className="gallery-item">
-              <img src="./img/vos-1.jpg" alt="Gallery of Voş photos" />
+              <img src="/img/vos-1.jpg" alt="Gallery of Voş photos" />
             </figure>
             <figure className="gallery-item">
-              <img src="./img/vos-3.jpg" alt="Gallery of Voş photos" />
+              <img src="/img/vos-3.jpg" alt="Gallery of Voş photos" />
             </figure>
             <figure className="gallery-item">
-              <img src="./img/vos-4.jpg" alt="Gallery of Voş photos" />
+              <img src="/img/vos-4.jpg" alt="Gallery of Voş photos" />
             </figure>
           </div>
         </div>
