@@ -412,7 +412,7 @@
     }
 
     .btn--options-container {
-      column-gap: 0;
+      column-gap: 1 !important;
     }
 
     .container-options {
