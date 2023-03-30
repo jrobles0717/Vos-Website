@@ -39,23 +39,12 @@ function AboutMe() {
               according to their own experiences.
             </p>
             <p className="paragraph-text">
-              His first House single,{" "}
-              <span className="paragraph-text--bold">ANTINOMIAS</span>, a
-              mixture of upbeat sounds and tropical elements, expresses the
-              contradictions of love: what is said versus what is done. Now, voş
-              most recent single,{" "}
-              <span className="paragraph-text--bold">SAUDADES</span>, reflects
-              on the feeling of missing someone who is far away or no longer
-              near. Through a sublime and intimate sound, listeners will
-              encounter strong feelings of nostalgia. These songs have been
-              worked with producer{" "}
-              <span className="paragraph-text--bold">William Russell</span> and
-              himself. At the moment, his taking the time to learn more about
-              music production and working with many projects a long friends so
-              eventually you’ll hear more about it. As a work in progress, he’s
-              open to collaborate with producers and artists so feel free to
-              email him or write him on his social media if you’re interested to
-              create music for the future that is now.
+              After releasing his two singles, his taking the time to learn more
+              about music production and working with many projects a long
+              friends so eventually you’ll hear more about it. As a work in
+              progress, he’s open to collaborate with producers and artists so
+              feel free to email him or write him on his social media if you’re
+              interested to create music for the future that is now.
             </p>
           </div>
           <div className="grid--gallery">
