@@ -11,10 +11,12 @@ function MailingList() {
             <form
               className="mailing-form"
               name="mailing-list"
-              method="post"
-              netlify="true"
+              method="POST"
+              action="/contact/?success=true"
+              data-netlify="true"
               onSubmit="submit"
             >
+              <input type="hidden" name="form-name" value="mailing-list" />
               <div>
                 <label htmlFor="name">Name</label>
                 <input
