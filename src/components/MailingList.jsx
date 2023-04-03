@@ -8,7 +8,13 @@ function MailingList() {
         <h2 className="title">Mailing List</h2>
         <div className="mailing-box">
           <div className="mailing-text-box">
-            <form className="mailing-form" name="mailing-list" netlify="true">
+            <form
+              className="mailing-form"
+              name="mailing-list"
+              method="post"
+              data-netlify="true"
+              onSubmit="submit"
+            >
               <div>
                 <label htmlFor="name">Name</label>
                 <input
@@ -55,7 +61,9 @@ function MailingList() {
                 </select>
               </div>
 
-              <button className="btn btn--form">Submit</button>
+              <button className="btn btn--form" type="submit">
+                Submit
+              </button>
             </form>
           </div>
         </div>
