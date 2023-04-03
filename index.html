@@ -27,6 +27,19 @@
     <title>VOSH</title>
   </head>
   <body class="sticky">
+    <!-- A little help for the Netlify post-processing bots -->
+    <form
+      name="mailing-list"
+      netlify
+      netlify-honeypot="bot-field"
+      action="/"
+      hidden
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="city" />
+      <select name="select-where"></select>
+    </form>
     <div id="root"></div>
     <script
       defer

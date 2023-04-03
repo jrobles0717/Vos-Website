@@ -12,7 +12,7 @@ function MailingList() {
               className="mailing-form"
               name="mailing-list"
               method="POST"
-              action="/#/?success=true"
+              action="/"
               data-netlify="true"
               onSubmit="submit"
             >
