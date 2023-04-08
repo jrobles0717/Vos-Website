@@ -32,11 +32,7 @@ function AboutMe() {
               <span className="paragraph-text--bold">Chillwave</span>,{" "}
               <span className="paragraph-text--bold">Jazz</span>,{" "}
               <span className="paragraph-text--bold">Rock</span>, and{" "}
-              <span className="paragraph-text--bold">R&B</span>. Although the
-              themes in his songs are based on life experiences, he takes the
-              time to interpret his lyrics in a generic way so that anyone can
-              identify with them and give them their own interpretation
-              according to their own experiences.
+              <span className="paragraph-text--bold">R&B</span>.
             </p>
             <p className="paragraph-text">
               After releasing his two singles, his taking the time to learn more
