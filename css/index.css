@@ -41,6 +41,8 @@ Large: 1.8
 - Accents: 
 #c92a2a (more darker)
 #d41c1c
+
+#00ff00
 - Greys
 
 #888
@@ -284,4 +286,10 @@ body {
 .icon:active {
   color: #c92a2a;
   transform: scale(1.2);
+}
+
+.icon--success {
+  color: #00ff00;
+  width: 5rem;
+  height: 5rem;
 }
