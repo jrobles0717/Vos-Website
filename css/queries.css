@@ -390,6 +390,10 @@
       padding: 0;
     }
 
+    .success-msg-text {
+      font-size: 1.6rem;
+    }
+
     .hero-container-btn {
       justify-content: center;
       gap: 2.4rem;

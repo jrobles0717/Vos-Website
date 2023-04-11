@@ -21,14 +21,14 @@ import vosImg from "../../img/vos-img.png";
 function Hero() {
   const [isStreamBtn, setIsStreamBtn] = useState(false);
   const [isBuyBtn, setIsBuyBtn] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(true);
 
   useEffect(() => {
     if (window.location.search.includes("success=true")) {
       setSuccess(true);
-      successHandler();
+      // successHandler();
     }
-    // successHandler();
+    successHandler();
   }, []);
 
   const StreamBtnHandler = () => {
