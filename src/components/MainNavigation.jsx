@@ -18,8 +18,8 @@ function MainNavigation() {
 
     e.preventDefault();
     const href = e.target.getAttribute("href");
-    console.log(e.target);
-    console.log(e.target.getAttribute("class"));
+    // console.log(e.target);
+    // console.log(e.target.getAttribute("class"));
 
     // Scroll back to top
     if (href === "#") {
@@ -32,7 +32,7 @@ function MainNavigation() {
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
-      console.log(sectionEl);
+      // console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 

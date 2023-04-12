@@ -21,14 +21,13 @@ import vosImg from "../../img/vos-img.png";
 function Hero() {
   const [isStreamBtn, setIsStreamBtn] = useState(false);
   const [isBuyBtn, setIsBuyBtn] = useState(false);
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     if (window.location.search.includes("success=true")) {
       setSuccess(true);
-      // successHandler();
+      successHandler();
     }
-    successHandler();
   }, []);
 
   const StreamBtnHandler = () => {
@@ -64,7 +63,6 @@ function Hero() {
         </p>
       </div>
       <div className={`hero ${!success && "hero--active"}`}>
-        {/* {success && successHandler()} */}
         <div className="img-box">
           <picture>
             <img src={vosImg} className="hero-img" alt="Voş photo" />
@@ -105,8 +103,6 @@ function Hero() {
               <BuyOptions active={isBuyBtn ? "stream-options--active" : ""} />
             </div>
           </div>
-          {/* {<BuyOptions active={isBuyBtn ? "stream-options--active" : ""} />}
-          <StreamOptions active={isStreamBtn ? "stream-options--active" : ""} /> */}
           <div className="hero-icons">
             <a
               href="https://www.facebook.com/esvosh/"
