@@ -23,16 +23,19 @@ function AboutMe() {
               “vosh”, was born and raised in San Juan, Puerto Rico. He began
               writing songs when he was 16 years old and, after 11 years of
               individually connecting with music & lyrics, is finally exposing
-              himself as an artist. Voş’ music style lands into experimental
-              music and incorporates elements like art and dance as a compliment
-              to lead listeners through the story of his songs. Similarly, his
-              future projects include fusions with genres such as{" "}
+              himself as an artist. As a control enthusiast introvert but also
+              as a rebel and outrageous creative aries, his music genre lands
+              into experimental music cause it gives him the freedom to explore
+              authentic sounds. And this is, from the most subtle sounds to the
+              most aggressive ones. At the moment, voş is creating fusions with
+              genres such as{" "}
               <span className="paragraph-text--bold">Electronic</span>,{" "}
               <span className="paragraph-text--bold">House</span>,{" "}
               <span className="paragraph-text--bold">Chillwave</span>,{" "}
               <span className="paragraph-text--bold">Jazz</span>,{" "}
               <span className="paragraph-text--bold">Rock</span>, and{" "}
-              <span className="paragraph-text--bold">R&B</span>.
+              <span className="paragraph-text--bold">R&B</span>. But those won't
+              be the only ones he'll be exploring.
             </p>
             <p className="paragraph-text">
               After releasing his two singles, his taking the time to learn more
