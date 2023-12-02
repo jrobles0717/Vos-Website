@@ -16,6 +16,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import BuyOptions from "./BuyOptions";
 import { FaStream } from "react-icons/fa";
 import StreamOptions from "./StreamOptions";
+import TwitterIcon from "./icons/TwitterIcon";
 import vosImg from "../../img/vos-img.png";
 
 function Hero() {
@@ -108,17 +109,10 @@ function Hero() {
               href="https://www.facebook.com/esvosh/"
               target="_blank"
               className="icon"
-              onClick={() => {}}
             >
               <BsFacebook size={22} className="icon--component" />
             </a>
-            <a
-              href="https://twitter.com/esvosh"
-              target="_blank"
-              className="icon"
-            >
-              <BsTwitter size={22} className="icon--component" />
-            </a>
+            <TwitterIcon />
             <a
               href="https://www.instagram.com/es.vosh/"
               target="_blank"
