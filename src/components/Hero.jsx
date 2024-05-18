@@ -17,7 +17,7 @@ import BuyOptions from "./BuyOptions";
 import { FaStream } from "react-icons/fa";
 import StreamOptions from "./StreamOptions";
 import TwitterIcon from "./icons/TwitterIcon";
-import vosImg from "../../img/vosh-hero-pic.png";
+import vosImg from "../../img/vosh-hero-pic.jpeg";
 
 function Hero() {
   const [isStreamBtn, setIsStreamBtn] = useState(false);

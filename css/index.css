@@ -38,11 +38,19 @@ Large: 1.8
 - Shades: 
 
 
-- Accents: 
+-- Accents: 
+- Red
 #c92a2a (more darker)
 #d41c1c
 
+- Blue
+#1F3A93 (darker)
+#37b0e9 (lighter)
+#007bff (shinny)
+
+- Green
 #00ff00
+
 - Greys
 
 #888
@@ -199,7 +207,7 @@ body {
 
 .btn--option:hover,
 .btn--option:active {
-  color: #c92a2a;
+  color: #37b0e9;
   transform: scale(1.05);
   /* background-image: linear-gradient(to top left, #bbbab8, #501111); */
 }
@@ -234,7 +242,7 @@ body {
 }
 
 .options-btn--active {
-  /* background-image: linear-gradient(to top left, #c92a2a, #474747); */
+  /* background-image: linear-gradient(to top left, #2c3bbd, #474747); */
   /* background-image: linear-gradient(to top left, #474747, #262626);
   color: #e5e4e2; */
 }
@@ -284,7 +292,7 @@ body {
 
 .icon:hover,
 .icon:active {
-  color: #c92a2a;
+  color: #1f3a93;
   transform: scale(1.2);
 }
 

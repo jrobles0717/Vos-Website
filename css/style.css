@@ -38,10 +38,17 @@ Large: 1.8
 - Shades: 
 
 
-- Accents: 
+-- Accents: 
+- Red
 #c92a2a (more darker)
 #d41c1c
 
+- Blue
+#1F3A93 (darker)
+#37b0e9 (lighter)
+#007bff (shinny)
+
+- Green
 #37b24d
 
 - Greys
@@ -113,15 +120,15 @@ Large: 1.8
   padding: 1.2rem 2.4rem;
   border-radius: 2px;
   color: #e5e4e2;
-  background-image: linear-gradient(to top left, #c92a2a, #262626);
+  background-image: linear-gradient(to top left, #1f3a93, #262626);
   /* color: #262626;
   background-color: #929290; */
 }
 
 .cta:hover,
 .cta:active {
-  /* background-image: linear-gradient(to top left, #c92a2a, #474747); */
-  background-image: linear-gradient(to top left, #c92a2a, #262626);
+  /* background-image: linear-gradient(to top left, #1F3A93, #474747); */
+  background-image: linear-gradient(to top left, #1f3a93, #262626);
   transform: scale(1.05);
 }
 
@@ -257,9 +264,9 @@ Large: 1.8
 .hero-text-out {
   font-size: 2.4rem;
   font-weight: 500;
-  color: #d41c1c;
-  /* background-color: #d41c1c;
-  background-image: linear-gradient(to top left, #6c6b6a, #d41c1c);
+  color: #007bff;
+  /* background-color: #5662ca;
+  background-image: linear-gradient(to top left, #6c6b6a, #5662ca);
   background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
   text-transform: uppercase;
@@ -275,12 +282,12 @@ Large: 1.8
 .cta--options,
 .cta--options {
   color: #e5e4e2;
-  background-image: linear-gradient(to top left, #c92a2a, #262626);
+  background-image: linear-gradient(to top left, #1f3a93, #262626);
 }
 
 .cta--options:hover {
-  background-image: linear-gradient(to top left, #c92a2a, #262626);
-  /* background-image: linear-gradient(to top left, #c92a2a, #474747); */
+  background-image: linear-gradient(to top left, #1f3a93, #262626);
+  /* background-image: linear-gradient(to top left, #1F3A93, #474747); */
   color: #e5e4e2;
   /* transform: scale(1.05); */
 }
@@ -441,7 +448,7 @@ Large: 1.8
 
 .mailing-form input:focus:invalid,
 .mailing-form select:focus:invalid {
-  border-bottom: 3px solid #c92a2a;
+  border-bottom: 3px solid #1f3a93;
 }
 
 .mailing-form input::placeholder {
@@ -470,13 +477,13 @@ Large: 1.8
   transition: all 0.3s;
 
   color: #e5e4e2;
-  background-image: linear-gradient(to top left, #c92a2a, #262626);
+  background-image: linear-gradient(to top left, #1f3a93, #262626);
 }
 
 .btn--form:hover,
 .btn--form:active {
-  /* background-image: linear-gradient(to top left, #c92a2a, #474747); */
-  background-image: linear-gradient(to top left, #c92a2a, #262626);
+  /* background-image: linear-gradient(to top left, #1F3A93, #474747); */
+  background-image: linear-gradient(to top left, #1f3a93, #262626);
   color: #e5e4e2;
 }
 
