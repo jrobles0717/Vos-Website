@@ -12,6 +12,8 @@ function Videos() {
         <div className="container-videos">
           <Video embedId="UmJEMCqjl3w" title="Saudades" />
           <Video embedId="d2feZqdh2Zg" title="Antinomias" />
+          <Video embedId="FrnPuGPt4ls" title="Bayoya" />
+          <Video embedId="RQ3cl6uFa2I" title="Ryo" />
         </div>
       </div>
     </section>
