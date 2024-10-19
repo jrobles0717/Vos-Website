@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import BuyOptions from "./BuyOptions";
 import { FaStream } from "react-icons/fa";
+import { IoLogoSoundcloud } from "react-icons/io5";
 import StreamOptions from "./StreamOptions";
 import TwitterIcon from "./icons/TwitterIcon";
 import vosImg from "../../img/vosh-hero-pic.jpeg";
@@ -106,13 +107,19 @@ function Hero() {
           </div>
           <div className="hero-icons">
             <a
-              href="https://www.facebook.com/esvosh/"
+              href="https://on.soundcloud.com/NZCS9Wh211SsEW8C7"
               target="_blank"
               className="icon"
             >
-              <BsFacebook size={22} className="icon--component" />
+              <IoLogoSoundcloud size={24} className="icon--component" />
             </a>
-            <TwitterIcon />
+            <a
+              href="https://www.youtube.com/channel/UCBJTfaNRAmX97_LgTlhRIIA"
+              target="_blank"
+              className="icon"
+            >
+              <BsYoutube size={24} className="icon--component" />
+            </a>
             <a
               href="https://www.instagram.com/es.vosh/"
               target="_blank"
@@ -128,12 +135,13 @@ function Hero() {
               <BsTiktok size={22} className="icon--component" />
             </a>
             <a
-              href="https://www.youtube.com/channel/UCBJTfaNRAmX97_LgTlhRIIA"
+              href="https://www.facebook.com/esvosh/"
               target="_blank"
               className="icon"
             >
-              <BsYoutube size={24} className="icon--component" />
+              <BsFacebook size={22} className="icon--component" />
             </a>
+            <TwitterIcon />
             <a
               href="mailto:esvoshmusic@gmail.com"
               target="_blank"
