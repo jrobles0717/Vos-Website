@@ -13,7 +13,7 @@ const Remix = () => {
             Elevate your event with a top-tier house DJ.
             <br />
             <span className="booking-text">
-              Interested in a booking? Feel free to{" "}
+              Interested in booking? Feel free to{" "}
               <a href="mailto:esvoshmusic@gmail.com" className="email-link">
                 send me an email.
               </a>
