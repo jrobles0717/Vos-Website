@@ -1,5 +1,5 @@
-import "../../css/index.css";
-import "../../css/style.css";
+import "../../../css/index.css";
+import "../../../css/style.css";
 
 function MailingList() {
   return (

@@ -1,10 +1,10 @@
-import "../../css/index.css";
-import "../../css/style.css";
+import "../../../css/index.css";
+import "../../../css/style.css";
 
-import vosImg1 from "../../img/vos-1.jpg";
-import vosImg2 from "../../img/vos-2.jpg";
-import vosImg3 from "../../img/vos-3.jpg";
-import vosImg4 from "../../img/vos-4.jpeg";
+import vosImg1 from "../../../img/vos-1.jpg";
+import vosImg2 from "../../../img/vos-2.jpg";
+import vosImg3 from "../../../img/vos-3.jpg";
+import vosImg4 from "../../../img/vos-4.jpeg";
 
 function AboutMe() {
   return (

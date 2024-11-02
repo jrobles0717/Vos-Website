@@ -77,6 +77,15 @@ function MainNavigation() {
           <li>
             <a
               className="main-nav-link"
+              href="#remixes"
+              onClick={navLinkHandler}
+            >
+              Remixes
+            </a>
+          </li>
+          <li>
+            <a
+              className="main-nav-link"
               href="#videos"
               onClick={navLinkHandler}
             >

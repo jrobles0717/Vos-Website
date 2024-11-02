@@ -366,7 +366,7 @@
 
   @media (max-width: 44em) {
     .secondary-title {
-      font-size: 4rem;
+      font-size: 4rem; /* Adjusted for readability on smaller screens */
     }
 
     .paragraph-text {
@@ -377,7 +377,27 @@
     }
 
     .mailing-text-box {
-      grid-template-columns: 0.2fr 1fr 0.2fr;
+      grid-template-columns: 0.2fr 1fr 0.2fr; /* Keeps the layout grid-based */
+    }
+
+    .remix-title {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .statement {
+      font-size: 1.4rem;
+      line-height: 1.4;
+      padding: 0 3rem;
+    }
+
+    .soundcloud-button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+
+    .soundcloud-button {
+      border-radius: 25px;
     }
   }
 

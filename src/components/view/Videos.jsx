@@ -1,7 +1,7 @@
-import "../../css/index.css";
-import "../../css/style.css";
+import "../../../css/index.css";
+import "../../../css/style.css";
 
-import Video from "./Video";
+import Video from "../Video";
 
 function Videos() {
   return (

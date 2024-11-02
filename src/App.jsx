@@ -1,9 +1,10 @@
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./components/view/AboutMe";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import MailingList from "./components/MailingList";
+import Hero from "./components/view/Hero";
+import MailingList from "./components/view/MailingList";
 import MainNavigation from "./components/MainNavigation";
-import Videos from "./components/Videos";
+import Remix from "./components/view/Remix";
+import Videos from "./components/view/Videos";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MainNavigation />
       <main>
         <Hero />
+        <Remix />
         <Videos />
         <AboutMe />
         <MailingList />

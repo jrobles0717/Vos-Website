@@ -1,5 +1,5 @@
-import "../../css/index.css";
-import "../../css/style.css";
+import "../../../css/index.css";
+import "../../../css/style.css";
 
 import {
   BsCurrencyExchange,
@@ -13,12 +13,12 @@ import {
 import { useEffect, useState } from "react";
 
 import { AiOutlineMail } from "react-icons/ai";
-import BuyOptions from "./BuyOptions";
+import BuyOptions from "../BuyOptions";
 import { FaStream } from "react-icons/fa";
 import { IoLogoSoundcloud } from "react-icons/io5";
-import StreamOptions from "./StreamOptions";
-import TwitterIcon from "./icons/TwitterIcon";
-import vosImg from "../../img/vosh-hero-pic.jpeg";
+import StreamOptions from "../StreamOptions";
+import TwitterIcon from "../icons/TwitterIcon";
+import vosImg from "../../../img/vosh-hero-pic.jpeg";
 
 function Hero() {
   const [isStreamBtn, setIsStreamBtn] = useState(false);
