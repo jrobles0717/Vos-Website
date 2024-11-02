@@ -354,6 +354,12 @@ Large: 1.8
   font-size: 1.8rem; /* Increased font size for better readability */
   line-height: 1.6; /* Good line height for readability */
   margin-bottom: 20px; /* Spacing below the paragraph */
+  text-align: center;
+}
+
+.booking-text {
+  /* text-align: center; */
+  display: block; /* Makes the span behave like a block element, starting on a new line */
 }
 
 .email-link {
@@ -368,7 +374,7 @@ Large: 1.8
 
 .email-link:hover {
   color: #37b0e9; /* Color change on hover */
-  transform: scale(1.05); /* Slightly increase the size */
+  transform: scale(1.02); /* Slightly increase the size */
   opacity: 0.7; /* Fade effect */
 }
 

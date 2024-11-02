@@ -10,10 +10,14 @@ const Remix = () => {
         <div className="background-overlay">
           <h1 className="remix-title">REMIXES</h1>
           <p className="statement">
-            Elevate your event with a top-tier house DJ. For bookings,{" "}
-            <a href="mailto:esvoshmusic@gmail.com" className="email-link">
-              email me
-            </a>
+            Elevate your event with a top-tier house DJ.
+            <br />
+            <span className="booking-text">
+              Interested in a booking? Feel free to{" "}
+              <a href="mailto:esvoshmusic@gmail.com" className="email-link">
+                send me an email.
+              </a>
+            </span>
           </p>
           <a
             href="https://on.soundcloud.com/BJoje2jyGqBGsQ8y8"
