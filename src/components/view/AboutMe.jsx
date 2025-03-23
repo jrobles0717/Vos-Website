@@ -13,30 +13,22 @@ function AboutMe() {
         <h2 className="title">About Me</h2>
         <div className="container--about-box">
           <div className="about-box">
-            <h3 className="secondary-title">So, who is he?</h3>
+            <h3 className="secondary-title">Sobre Voş</h3>
             <p className="paragraph-text">
-              <span className="paragraph-text--bold">Voş</span>, pronounced
-              “vosh”, was born and raised in San Juan, Puerto Rico. He began
-              writing songs when he was 16 years old and, after 11 years of
-              individually connecting with music & lyrics, is finally exposing
-              himself as an artist. Due to being a control enthusiast introvert
-              but also a rebel creative aries, his music genre lands into
-              experimental music. At the moment, voş is into genres such as{" "}
-              <span className="paragraph-text--bold">Electronic</span>,{" "}
+              <span className="paragraph-text--bold">Voş</span>, pronunciado
+              "vosh", nació y creció en San Juan, Puerto Rico. Empezó a escribir
+              canciones a los 16 años y, luego de 11 años de conectar
+              individualmente con la música y las letras, finalmente, se está
+              exponiendo como artista. Debido a su curiosidad y ganas de crear
+              propuestas sonoras excéntricas, su género musical aterriza en la
+              música experimental que reúne géneros como el{" "}
               <span className="paragraph-text--bold">House</span>,{" "}
-              <span className="paragraph-text--bold">Chillwave</span>,{" "}
-              <span className="paragraph-text--bold">Jazz</span>,{" "}
-              <span className="paragraph-text--bold">Rock</span>, and{" "}
-              <span className="paragraph-text--bold">R&B</span>. But those won’t
-              be the only ones he’ll be exploring.
-            </p>
-            <p className="paragraph-text">
-              After releasing his two singles, his taking the time to learn more
-              about music production and working with many projects a long
-              friends so eventually you’ll hear more about it. As a work in
-              progress, he’s open to collaborate with producers and artists so
-              feel free to email him or write him on his social media if you’re
-              interested to create music for the future that is now.
+              <span className="paragraph-text--bold">Soul</span>,{" "}
+              <span className="paragraph-text--bold">Electrónica</span>,{" "}
+              <span className="paragraph-text--bold">Rock</span>,{" "}
+              <span className="paragraph-text--bold">R&B</span>, and{" "}
+              <span className="paragraph-text--bold">Jazz</span>. Y todo esto,
+              con su toque caribeño.
             </p>
           </div>
           <div className="grid--gallery">
