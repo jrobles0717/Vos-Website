@@ -3,63 +3,45 @@ import "../../css/style.css";
 import "../../css/queries.css";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { useEffect, useRef, useState } from "react";
-
-import { FaGlobe } from "react-icons/fa"; // Import a globe icon for the language selector
+import { useEffect, useState } from "react";
 
 function MainNavigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("en"); // Default language is English
-  const [dropdownOpen, setDropdownOpen] = useState(false); // State for dropdown menu
-  const languageSelectorRef = useRef(null); // Ref for the language selector
 
   const mobileNavHandler = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDropdown = () => {
-    setDropdownOpen((prev) => !prev); // Toggle dropdown on click
-  };
-
-  const selectLanguage = (selectedLanguage) => {
-    setLanguage(selectedLanguage);
-    setDropdownOpen(false); // Close the dropdown after selection
-  };
-
   const navLinkHandler = (e) => {
+    ///////////////////////////////////////////////////////////
+    // Smooth scrolling animation
+
     e.preventDefault();
     const href = e.target.getAttribute("href");
+    // console.log(e.target);
+    // console.log(e.target.getAttribute("class"));
 
+    // Scroll back to top
     if (href === "#") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
 
+    // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
+      // console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
     setIsOpen(!isOpen);
   };
 
-  const texts = {
-    en: {
-      home: "Home",
-      remixes: "Remixes",
-      videos: "Videos",
-      about: "About Me",
-      mailing: "Mailing List",
-    },
-    es: {
-      home: "Inicio",
-      remixes: "Remixes",
-      videos: "Videos",
-      about: "Sobre mí",
-      mailing: "Lista de correo",
-    },
-  };
-
   useEffect(() => {
+    ///////////////////////////////////////////////////////////
+    // Fixing flexbox gap property missing in some Safari versions
     function checkFlexGap() {
       var flex = document.createElement("div");
       flex.style.display = "flex";
@@ -72,35 +54,24 @@ function MainNavigation() {
       document.body.appendChild(flex);
       var isSupported = flex.scrollHeight === 1;
       flex.parentNode.removeChild(flex);
+      // console.log(isSupported);
 
       if (!isSupported) document.body.classList.add("no-flexbox-gap");
     }
     checkFlexGap();
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        languageSelectorRef.current &&
-        !languageSelectorRef.current.contains(event.target)
-      ) {
-        setDropdownOpen(false); // Close dropdown if clicked outside
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   return (
     <header className={`header ${isOpen && "nav-open"}`}>
+      {/* <a href="#" className="icon">
+        <AiOutlineHome size={22} />
+      </a> */}
+
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
             <a className="main-nav-link" href="#" onClick={navLinkHandler}>
-              {texts[language].home}
+              Home
             </a>
           </li>
           <li>
@@ -109,7 +80,7 @@ function MainNavigation() {
               href="#remixes"
               onClick={navLinkHandler}
             >
-              {texts[language].remixes}
+              Remixes
             </a>
           </li>
           <li>
@@ -118,44 +89,30 @@ function MainNavigation() {
               href="#videos"
               onClick={navLinkHandler}
             >
-              {texts[language].videos}
+              Videos
             </a>
           </li>
           <li>
             <a className="main-nav-link" href="#about" onClick={navLinkHandler}>
-              {texts[language].about}
+              About Me
             </a>
           </li>
-          <li className="cta-container">
+          <li>
             <a
               className="main-nav-link cta"
               href="#mailing"
               onClick={navLinkHandler}
             >
-              {texts[language].mailing}
+              Mailing List
             </a>
-            <div
-              className="language-selector"
-              ref={languageSelectorRef} // Attach ref to the language selector
-            >
-              <button className="language-icon" onClick={toggleDropdown}>
-                <FaGlobe size={20} color="#37b0e9" />
-              </button>
-              {dropdownOpen && (
-                <ul className="language-dropdown">
-                  <li onClick={() => selectLanguage("en")}>English</li>
-                  <li onClick={() => selectLanguage("es")}>Español</li>
-                </ul>
-              )}
-            </div>
           </li>
         </ul>
-
-        <button className={"btn-mobile-nav"} onClick={mobileNavHandler}>
-          <AiOutlineMenu className="icon-mobile-nav" name="menu" />
-          <AiOutlineClose className="icon-mobile-nav" name="close" />
-        </button>
       </nav>
+
+      <button className={"btn-mobile-nav"} onClick={mobileNavHandler}>
+        <AiOutlineMenu className="icon-mobile-nav" name="menu" />
+        <AiOutlineClose className="icon-mobile-nav" name="close" />
+      </button>
     </header>
   );
 }

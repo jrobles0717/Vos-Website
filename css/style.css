@@ -89,64 +89,14 @@ Large: 1.8
 }
 
 /****************************/
-/* SWITCH */
-/****************************/
-
-.card-language-switch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; /* Space between cards */
-}
-
-.language-card {
-  background-color: #1f3a93; /* Darker blue for the inactive state */
-  border-radius: 10px;
-  padding: 10px 15px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white; /* Text color for better contrast */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.language-card:hover {
-  background-color: #37b0e9; /* Lighter blue on hover */
-}
-
-.language-card.active {
-  background-color: #007bff; /* Shiny blue for the active state */
-  transform: scale(1.05); /* Slightly enlarge the active card */
-}
-
-.language-card:not(.active) {
-  opacity: 0.7; /* Dim inactive card */
-}
-
-/****************************/
 /* NAVIGATION */
 /****************************/
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Space between left and right containers */
-  padding: 1rem; /* Add some padding for better spacing */
-  width: 100%; /* Ensure full width */
-}
 
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem; /* Space between menu items */
-  margin-left: auto; /* Push the nav items to the right */
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -164,12 +114,6 @@ Large: 1.8
   color: #929290;
 }
 
-.cta-container {
-  position: relative; /* Needed for dropdown positioning */
-  display: flex;
-  align-items: center;
-}
-
 .cta,
 .cta:link,
 .cta:visited {
@@ -177,68 +121,15 @@ Large: 1.8
   border-radius: 2px;
   color: #e5e4e2;
   background-image: linear-gradient(to top left, #1f3a93, #262626);
+  /* color: #262626;
+  background-color: #929290; */
 }
 
 .cta:hover,
 .cta:active {
+  /* background-image: linear-gradient(to top left, #1F3A93, #474747); */
   background-image: linear-gradient(to top left, #1f3a93, #262626);
   transform: scale(1.05);
-}
-
-/* Language selector styles */
-.language-selector {
-  position: relative;
-  margin-left: 2rem; /* Space between mailing list and icon */
-  display: flex;
-  align-items: center;
-}
-
-.language-icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem; /* Padding around the icon */
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.language-icon:hover {
-  background-color: #1f3a93; /* Darker blue for hover effect */
-}
-
-/* Dropdown menu */
-.language-dropdown {
-  position: absolute;
-  top: 100%; /* Position directly below the icon */
-  left: 50%; /* Center the dropdown horizontally */
-  transform: translateX(-50%); /* Adjust to center */
-  background-color: #1f3a9396; /* Darker blue for dropdown background */
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  z-index: 10;
-  opacity: 1;
-  visibility: visible;
-}
-
-.language-dropdown li {
-  padding: 0.5rem 1rem;
-  color: white; /* White text for contrast */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.language-dropdown li:hover {
-  background-color: #37b0e9; /* Lighter blue for hover effect */
-}
-
-.language-dropdown li:active {
-  background-color: #007bff; /* Shiny blue for active state */
 }
 
 /* MOBILE */
