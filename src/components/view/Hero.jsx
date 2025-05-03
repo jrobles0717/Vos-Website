@@ -7,7 +7,6 @@ import {
   BsFillCheckCircleFill,
   BsInstagram,
   BsTiktok,
-  BsTwitter,
   BsYoutube,
 } from "react-icons/bs";
 import { useEffect, useState } from "react";
@@ -18,9 +17,11 @@ import { FaStream } from "react-icons/fa";
 import { IoLogoSoundcloud } from "react-icons/io5";
 import StreamOptions from "../StreamOptions";
 import TwitterIcon from "../icons/TwitterIcon";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 import vosImg from "../../../img/vosh-hero-pic.jpeg";
 
 function Hero() {
+  const { t } = useTranslation(); // Initialize translation
   const [isStreamBtn, setIsStreamBtn] = useState(false);
   const [isBuyBtn, setIsBuyBtn] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -58,12 +59,13 @@ function Hero() {
 
   return (
     <section className="section-hero">
+      {/* Success Message */}
       <div className={`success-msg ${success && "success-msg--active"}`}>
         <BsFillCheckCircleFill className="icon--success" />
-        <p className="success-msg-text">
-          Successful submission! Thank you for your support!
-        </p>
+        <p className="success-msg-text">{t("successMessage")}</p>
       </div>
+
+      {/* Hero Section */}
       <div className={`hero ${!success && "hero--active"}`}>
         <div className="img-box">
           <picture>
@@ -71,8 +73,8 @@ function Hero() {
           </picture>
         </div>
         <div className="hero-text-box">
-          <h1 className="hero-heading-primary">Voş</h1>
-          <p className="hero-text-out">listen now</p>
+          <h1 className="hero-heading-primary">{t("heroHeading")}</h1>
+          <p className="hero-text-out">{t("heroSubheading")}</p>
           <div className="hero-container-btn">
             <div className="option-container-btn">
               <button
@@ -83,7 +85,7 @@ function Hero() {
               >
                 <div className="btn--options-container">
                   <FaStream size={20} />
-                  <span className="name-options-btn">stream songs</span>
+                  <span className="name-options-btn">{t("streamSongs")}</span>
                 </div>
               </button>
               <StreamOptions
@@ -99,7 +101,7 @@ function Hero() {
               >
                 <div className="btn--options-container">
                   <BsCurrencyExchange size={20} />
-                  <span className="name-options-btn">buy songs</span>
+                  <span className="name-options-btn">{t("buySongs")}</span>
                 </div>
               </button>
               <BuyOptions active={isBuyBtn ? "stream-options--active" : ""} />

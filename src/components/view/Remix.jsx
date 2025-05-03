@@ -1,32 +1,34 @@
 import "../../../css/index.css";
 import "../../../css/style.css";
 
+import { BsYoutube } from "react-icons/bs"; // Import the YouTube icon
 import React from "react";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 const Remix = () => {
+  const { t } = useTranslation(); // Initialize translation
+
   return (
     <section className="section-about" id="remixes">
       <div className="remix-container">
         <div className="background-overlay">
-          <h1 className="remix-title">REMIXES</h1>
+          <h1 className="remix-title">{t("remixTitle")}</h1>
           <p className="statement">
-            ¿Estás en busca de música ‘house’ exclusiva para tu evento o
-            actividad?
+            {t("remixDescription")}
             <br />
-            <span className="booking-text">
-              Contáctame enviando un{" "}
-              <a href="mailto:esvoshmusic@gmail.com" className="email-link">
-                correo electrónico.
-              </a>
-            </span>
+            <span
+              className="booking-text"
+              dangerouslySetInnerHTML={{ __html: t("contactText") }}
+            />
           </p>
           <a
-            href="https://on.soundcloud.com/BJoje2jyGqBGsQ8y8"
+            href="https://www.youtube.com/channel/UCBJTfaNRAmX97_LgTlhRIIA" // Link to Voş's YouTube remixes
             target="_blank"
             rel="noopener noreferrer"
-            className="soundcloud-button"
+            className="youtube-button"
           >
-            Escucha en SoundCloud
+            <BsYoutube size={24} className="icon--component" />{" "}
+            {t("listenOnYoutube")} {/* Updated button text */}
           </a>
         </div>
       </div>

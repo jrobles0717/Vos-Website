@@ -5,7 +5,10 @@ import "../../css/queries.css";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
+import { useTranslation } from "react-i18next"; // Import useTranslation
+
 function MainNavigation() {
+  const { t, i18n } = useTranslation(); // Initialize translation
   const [isOpen, setIsOpen] = useState(false);
 
   const mobileNavHandler = () => {
@@ -13,15 +16,9 @@ function MainNavigation() {
   };
 
   const navLinkHandler = (e) => {
-    ///////////////////////////////////////////////////////////
-    // Smooth scrolling animation
-
     e.preventDefault();
     const href = e.target.getAttribute("href");
-    // console.log(e.target);
-    // console.log(e.target.getAttribute("class"));
 
-    // Scroll back to top
     if (href === "#") {
       window.scrollTo({
         top: 0,
@@ -29,19 +26,19 @@ function MainNavigation() {
       });
     }
 
-    // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
-      // console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
     setIsOpen(!isOpen);
   };
 
+  const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang); // Change language dynamically
+  };
+
   useEffect(() => {
-    ///////////////////////////////////////////////////////////
-    // Fixing flexbox gap property missing in some Safari versions
     function checkFlexGap() {
       var flex = document.createElement("div");
       flex.style.display = "flex";
@@ -54,7 +51,6 @@ function MainNavigation() {
       document.body.appendChild(flex);
       var isSupported = flex.scrollHeight === 1;
       flex.parentNode.removeChild(flex);
-      // console.log(isSupported);
 
       if (!isSupported) document.body.classList.add("no-flexbox-gap");
     }
@@ -63,15 +59,11 @@ function MainNavigation() {
 
   return (
     <header className={`header ${isOpen && "nav-open"}`}>
-      {/* <a href="#" className="icon">
-        <AiOutlineHome size={22} />
-      </a> */}
-
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
             <a className="main-nav-link" href="#" onClick={navLinkHandler}>
-              Home
+              {t("home")}
             </a>
           </li>
           <li>
@@ -80,7 +72,7 @@ function MainNavigation() {
               href="#remixes"
               onClick={navLinkHandler}
             >
-              Remixes
+              {t("remixes")}
             </a>
           </li>
           <li>
@@ -89,22 +81,37 @@ function MainNavigation() {
               href="#videos"
               onClick={navLinkHandler}
             >
-              Videos
+              {t("videos")}
             </a>
           </li>
           <li>
             <a className="main-nav-link" href="#about" onClick={navLinkHandler}>
-              About Me
+              {t("about")}
             </a>
           </li>
           <li>
             <a
               className="main-nav-link cta"
-              href="#mailing"
+              href="#subscribe" // Updated to point to #subscribe
               onClick={navLinkHandler}
             >
-              Mailing List
+              {t("subscribe")} {/* Updated to use subscribe */}
             </a>
+          </li>
+          {/* Language Switcher */}
+          <li className="language-switcher">
+            <button
+              onClick={() => handleLanguageChange("es")}
+              className={`lang-btn ${i18n.language === "es" ? "active" : ""}`}
+            >
+              Español
+            </button>
+            <button
+              onClick={() => handleLanguageChange("en")}
+              className={`lang-btn ${i18n.language === "en" ? "active" : ""}`}
+            >
+              English
+            </button>
           </li>
         </ul>
       </nav>

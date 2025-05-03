@@ -1,22 +1,17 @@
 import "../../css/index.css";
 import "../../css/style.css";
 
-import { useEffect } from "react";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 function Footer() {
-  useEffect(() => {
-    // Set current year
-    const yearEl = document.querySelector(".year");
-    const currentYear = new Date().getFullYear();
-    yearEl.textContent = currentYear;
-  }, []);
+  const { t } = useTranslation(); // Initialize translation
+  const currentYear = new Date().getFullYear(); // Get current year
 
   return (
     <footer className="footer">
       <div className="container">
         <p className="copyright">
-          Copyright &copy; <span className="year">2028</span> by Voş. All rights
-          reserved.
+          {t("copyright", { year: currentYear })} {/* Use translation */}
         </p>
       </div>
     </footer>

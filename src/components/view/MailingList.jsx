@@ -1,11 +1,17 @@
 import "../../../css/index.css";
 import "../../../css/style.css";
 
+import { useTranslation } from "react-i18next"; // Import useTranslation
+
 function MailingList() {
+  const { t } = useTranslation(); // Initialize translation
+
   return (
-    <section className="section-mailing" id="mailing">
+    <section className="section-mailing" id="subscribe">
+      {" "}
+      {/* Changed id to subscribe */}
       <div className="container">
-        <h2 className="title">Mailing List</h2>
+        <h2 className="title">{t("subscribe")}</h2>
         <div className="mailing-box">
           <div className="mailing-text-box">
             <form
@@ -18,7 +24,7 @@ function MailingList() {
             >
               <input type="hidden" name="form-name" value="mailing-list" />
               <div>
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">{t("nameLabel")}</label>
                 <input
                   id="name"
                   type="text"
@@ -28,7 +34,7 @@ function MailingList() {
                 />
               </div>
               <div>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t("emailLabel")}</label>
                 <input
                   id="email"
                   type="email"
@@ -38,7 +44,7 @@ function MailingList() {
                 />
               </div>
               <div>
-                <label htmlFor="city">City</label>
+                <label htmlFor="city">{t("cityLabel")}</label>
                 <input
                   id="city"
                   type="text"
@@ -48,23 +54,21 @@ function MailingList() {
                 />
               </div>
               <div>
-                <label htmlFor="select-where">
-                  Where did you hear about me?
-                </label>
+                <label htmlFor="select-where">{t("selectWhereLabel")}</label>
                 <select id="select-where" name="select-where" required>
-                  <option value="">Please choose one option:</option>
-                  <option value="spotify">Spotify</option>
-                  <option value="apple">Apple Music</option>
-                  <option value="amazon">Amazon Music</option>
-                  <option value="instagram">Instagram</option>
-                  <option value="twitter">Twitter</option>
-                  <option value="facebook">Facebook</option>
-                  <option value="others">Others</option>
+                  <option value="">{t("selectOption")}</option>
+                  <option value="spotify">{t("spotify")}</option>
+                  <option value="apple">{t("apple")}</option>
+                  <option value="amazon">{t("amazon")}</option>
+                  <option value="instagram">{t("instagram")}</option>
+                  <option value="twitter">{t("twitter")}</option>
+                  <option value="facebook">{t("facebook")}</option>
+                  <option value="others">{t("others")}</option>
                 </select>
               </div>
 
               <button className="btn btn--form" type="submit">
-                Submit
+                {t("submitButton")}
               </button>
             </form>
           </div>

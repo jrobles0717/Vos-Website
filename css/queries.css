@@ -361,6 +361,40 @@
   }
 
   /****************************/
+  /* BELOW 768px (Smaller Tablets) */
+  /****************************/
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-nav-list {
+      flex-direction: column;
+      gap: 2.4rem;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 9.6rem;
+      right: 0;
+      width: 100%;
+      padding: 2.4rem;
+      display: none;
+    }
+
+    .header.nav-open .main-nav-list {
+      display: flex;
+    }
+
+    .btn-mobile-nav {
+      display: block;
+      position: absolute;
+      right: 2.4rem;
+    }
+
+    .language-switcher {
+      justify-content: center;
+      margin-top: 1.6rem;
+    }
+  }
+
+  /****************************/
   /* BELOW 704px (Smaller Tablets) */
   /****************************/
 

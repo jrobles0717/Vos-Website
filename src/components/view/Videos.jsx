@@ -2,12 +2,15 @@ import "../../../css/index.css";
 import "../../../css/style.css";
 
 import Video from "../Video";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 function Videos() {
+  const { t } = useTranslation(); // Initialize translation
+
   return (
     <section className="section-videos" id="videos">
       <div className="container">
-        <h2 className="title">Videos</h2>
+        <h2 className="title">{t("videosTitle")}</h2>
 
         <div className="container-videos">
           <Video embedId="UmJEMCqjl3w" title="Saudades" />
