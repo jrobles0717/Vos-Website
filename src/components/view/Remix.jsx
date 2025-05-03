@@ -22,7 +22,7 @@ const Remix = () => {
             />
           </p>
           <a
-            href="https://www.youtube.com/channel/UCBJTfaNRAmX97_LgTlhRIIA" // Link to Voş's YouTube remixes
+            href="https://www.youtube.com/playlist?list=PLCkuhMYKUB3igFxDJFEmbjU5bSXdiCUdY" // Link to Voş's YouTube remixes
             target="_blank"
             rel="noopener noreferrer"
             className="youtube-button"
