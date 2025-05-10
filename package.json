@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "esbuild": "^0.24.0",
     "i18next": "^25.0.2",
     "prop-types": "^15.8.1",

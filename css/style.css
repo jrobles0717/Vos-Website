@@ -79,10 +79,7 @@ Large: 1.8
 .header {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   justify-content: end;
-
-  /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
@@ -107,11 +104,32 @@ Large: 1.8
   font-size: 1.8rem;
   font-weight: 500;
   transition: all 0.3s;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below */
+  animation: fadeInUp 0.5s ease forwards; /* Animation to fade in and move up */
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #929290;
+}
+
+/* Add an underline effect on hover */
+.main-nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #929290; /* Color of the underline */
+  transition: width 0.3s; /* Transition for the width */
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Position below the text */
+  transform: translateX(-50%); /* Center the underline */
+}
+
+.main-nav-link:hover::after {
+  width: 100%; /* Full width on hover */
 }
 
 .cta,
@@ -129,11 +147,18 @@ Large: 1.8
   transform: scale(1.05);
 }
 
-/* Language Switcher */
+/****************************/
+/* LANGUAGE SWITCHER */
+/****************************/
+
 .language-switcher {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below */
+  animation: fadeInUp 0.5s ease forwards; /* Fade-in animation */
+  animation-delay: 1.2s; /* Delay to match the section animations */
 }
 
 .lang-btn {
@@ -145,11 +170,13 @@ Large: 1.8
   font-size: 1.6rem;
   transition:
     background-color 0.3s,
-    color 0.3s;
+    color 0.3s,
+    transform 0.3s; /* Smooth hover effects */
 }
 
 .lang-btn:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .lang-btn.active {
@@ -157,12 +184,17 @@ Large: 1.8
   border-bottom: 2px solid #fff;
 }
 
+.lang-btn:disabled {
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+  opacity: 0.5; /* Make the button look faded */
+  pointer-events: none; /* Prevent any interaction */
+}
+
 /* MOBILE */
 .btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
-
   display: none;
 }
 
@@ -174,6 +206,82 @@ Large: 1.8
 
 .icon-mobile-nav[name="close"] {
   display: none;
+}
+
+/****************************/
+/* ANIMATIONS */
+/****************************/
+
+/* Keyframes for fade-in and move-up effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+/* Add delays for each navigation link */
+.main-nav-list li:nth-child(1) .main-nav-link {
+  animation-delay: 0.2s; /* First link appears after 0.2s */
+}
+
+.main-nav-list li:nth-child(2) .main-nav-link {
+  animation-delay: 0.4s; /* Second link appears after 0.4s */
+}
+
+.main-nav-list li:nth-child(3) .main-nav-link {
+  animation-delay: 0.6s; /* Third link appears after 0.6s */
+}
+
+.main-nav-list li:nth-child(4) .main-nav-link {
+  animation-delay: 0.8s; /* Fourth link appears after 0.8s */
+}
+
+.main-nav-list li:nth-child(5) .main-nav-link {
+  animation-delay: 1s; /* Fifth link appears after 1s */
+}
+
+.language-switcher .lang-btn:nth-child(1) {
+  animation-delay: 1.2s; /* First button appears after 1.4s */
+}
+
+.language-switcher .lang-btn:nth-child(2) {
+  animation-delay: 1.4s; /* Second button appears after 1.6s */
+}
+
+/****************************/
+/* LANGUAGE TRANSITION TEXT */
+/****************************/
+
+.language-transition-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 1; /* Fully visible */
+}
+
+/* Fade-out effect */
+.fade-out {
+  opacity: 0; /* Fully hidden */
 }
 
 /****************************/

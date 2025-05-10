@@ -10,6 +10,8 @@ import { useTranslation } from "react-i18next"; // Import useTranslation
 function MainNavigation() {
   const { t, i18n } = useTranslation(); // Initialize translation
   const [isOpen, setIsOpen] = useState(false);
+  const [transitionText, setTransitionText] = useState(""); // State for transition text
+  const [isTransitioning, setIsTransitioning] = useState(false); // State for animation
 
   const mobileNavHandler = () => {
     setIsOpen(!isOpen);
@@ -31,11 +33,21 @@ function MainNavigation() {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
-    setIsOpen(!isOpen);
+    setIsOpen(false); // Close the menu after clicking a link
   };
 
   const handleLanguageChange = (lang) => {
-    i18n.changeLanguage(lang); // Change language dynamically
+    // Set the transition text
+    setTransitionText(
+      lang === "es" ? "Switching to Spanish..." : "Switching to English..."
+    );
+    setIsTransitioning(true); // Start the animation
+
+    // Change language after a short delay
+    setTimeout(() => {
+      i18n.changeLanguage(lang);
+      setIsTransitioning(false); // End the animation
+    }, 1000); // Match the duration of the animation
   };
 
   useEffect(() => {
@@ -58,7 +70,7 @@ function MainNavigation() {
   }, []);
 
   return (
-    <header className={`header ${isOpen && "nav-open"}`}>
+    <header className={`header ${isOpen ? "nav-open" : ""}`}>
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
@@ -92,10 +104,10 @@ function MainNavigation() {
           <li>
             <a
               className="main-nav-link cta"
-              href="#subscribe" // Updated to point to #subscribe
+              href="#subscribe"
               onClick={navLinkHandler}
             >
-              {t("subscribe")} {/* Updated to use subscribe */}
+              {t("subscribe")}
             </a>
           </li>
           {/* Language Switcher */}
@@ -103,12 +115,14 @@ function MainNavigation() {
             <button
               onClick={() => handleLanguageChange("es")}
               className={`lang-btn ${i18n.language === "es" ? "active" : ""}`}
+              disabled={i18n.language === "es"} // Disable if currently selected
             >
               Español
             </button>
             <button
               onClick={() => handleLanguageChange("en")}
               className={`lang-btn ${i18n.language === "en" ? "active" : ""}`}
+              disabled={i18n.language === "en"} // Disable if currently selected
             >
               English
             </button>
@@ -117,9 +131,21 @@ function MainNavigation() {
       </nav>
 
       <button className={"btn-mobile-nav"} onClick={mobileNavHandler}>
-        <AiOutlineMenu className="icon-mobile-nav" name="menu" />
-        <AiOutlineClose className="icon-mobile-nav" name="close" />
+        {isOpen ? (
+          <AiOutlineClose className="icon-mobile-nav" name="close" />
+        ) : (
+          <AiOutlineMenu className="icon-mobile-nav" name="menu" />
+        )}
       </button>
+
+      {/* Transition Text */}
+      {isTransitioning && (
+        <div
+          className={`language-transition-text ${isTransitioning ? "fade-in" : "fade-out"}`}
+        >
+          {transitionText}
+        </div>
+      )}
     </header>
   );
 }

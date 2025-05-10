@@ -1,24 +1,27 @@
-import AboutMe from "./components/view/AboutMe";
+import AboutMe from "./view/AboutMe";
+import AosInitializer from "./components/AosInitializer";
 import Footer from "./components/Footer";
-import Hero from "./components/view/Hero";
-import MailingList from "./components/view/MailingList";
+import Hero from "./view/Hero";
+import MailingList from "./view/MailingList";
 import MainNavigation from "./components/MainNavigation";
-import Remix from "./components/view/Remix";
-import Videos from "./components/view/Videos";
+import Remix from "./view/Remix";
+import Videos from "./view/Videos";
 
 function App() {
   return (
-    <>
-      <MainNavigation />
-      <main>
-        <Hero />
-        <Remix />
-        <Videos />
-        <AboutMe />
-        <MailingList />
-      </main>
-      <Footer />
-    </>
+    <AosInitializer>
+      <>
+        <MainNavigation />
+        <main>
+          <Hero />
+          <Remix />
+          <Videos />
+          <AboutMe />
+          <MailingList />
+        </main>
+        <Footer />
+      </>
+    </AosInitializer>
   );
 }
 

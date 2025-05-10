@@ -1,5 +1,5 @@
-import "../../../css/index.css";
-import "../../../css/style.css";
+import "../../css/index.css";
+import "../../css/style.css";
 
 import { BsYoutube } from "react-icons/bs"; // Import the YouTube icon
 import React from "react";
@@ -10,8 +10,16 @@ const Remix = () => {
 
   return (
     <section className="section-about" id="remixes">
-      <div className="remix-container">
-        <div className="background-overlay">
+      <div className="remix-container" data-aos="fade-up">
+        {" "}
+        {/* Add AOS animation here */}
+        <div
+          className="background-overlay"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          {" "}
+          {/* Add AOS animation here */}
           <h1 className="remix-title">{t("remixTitle")}</h1>
           <p className="statement">
             {t("remixDescription")}
@@ -26,6 +34,8 @@ const Remix = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="youtube-button"
+            data-aos="fade-up" // Add AOS animation here
+            data-aos-delay="200" // Add delay for staggered effect
           >
             <BsYoutube size={24} className="icon--component" />{" "}
             {t("listenOnYoutube")} {/* Updated button text */}

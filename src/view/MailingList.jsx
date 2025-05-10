@@ -1,5 +1,5 @@
-import "../../../css/index.css";
-import "../../../css/style.css";
+import "../../css/index.css";
+import "../../css/style.css";
 
 import { useTranslation } from "react-i18next"; // Import useTranslation
 
@@ -11,8 +11,14 @@ function MailingList() {
       {" "}
       {/* Changed id to subscribe */}
       <div className="container">
-        <h2 className="title">{t("subscribe")}</h2>
-        <div className="mailing-box">
+        <h2 className="title" data-aos="fade-up">
+          {" "}
+          {/* Add AOS animation here */}
+          {t("subscribe")}
+        </h2>
+        <div className="mailing-box" data-aos="fade-up" data-aos-delay="100">
+          {" "}
+          {/* Add AOS animation here */}
           <div className="mailing-text-box">
             <form
               className="mailing-form"
