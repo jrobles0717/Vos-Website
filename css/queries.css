@@ -392,6 +392,16 @@
       justify-content: center;
       margin-top: 1.6rem;
     }
+
+    .success-msg {
+      padding: 1.2rem 1.6rem; /* Reduce padding for smaller screens */
+      font-size: 1.4rem; /* Adjust font size */
+      top: 5%; /* Reduce top margin for smaller screens */
+    }
+
+    .icon--success {
+      font-size: 2rem; /* Adjust icon size */
+    }
   }
 
   /****************************/
@@ -462,9 +472,6 @@
       margin-bottom: 1.6rem;
     }
 
-    .option-container-btn {
-    }
-
     .btn--options {
       padding: 1.5rem 2rem;
     }
@@ -492,18 +499,9 @@
       height: 2.4rem;
     }
 
-    /* .icon--component-amazon {
-      width: 2.7rem;
-      height: 2.7rem;
-    } */
-
     .container-videos {
       padding: 0;
     }
-
-    /* .container-video {
-      width: auto;
-    } */
 
     .video {
       width: auto;
@@ -544,6 +542,16 @@
       padding: 1rem;
       font-size: 1.8rem;
       margin-bottom: 1.6rem;
+    }
+
+    .success-msg {
+      padding: 1rem 1.2rem; /* Further reduce padding for very small screens */
+      font-size: 1.2rem; /* Adjust font size */
+      top: 3%; /* Reduce top margin further */
+    }
+
+    .icon--success {
+      font-size: 1.8rem; /* Adjust icon size */
     }
   }
 }

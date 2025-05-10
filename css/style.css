@@ -312,38 +312,46 @@ Large: 1.8
 .section-hero {
   /* background-image: url("../../img/background.jpg"); */
   padding: 4.8rem 0 9.6rem 0;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   /* margin-bottom: 6.4rem; */
   transition: all 1s ease-in-out;
   position: relative;
 }
 
 .success-msg {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  align-items: center;
-  top: 10%;
-  left: 0;
-  transform: translate(0, -50%);
-  transition: all 2s;
-  z-index: 100;
-}
-
-.success-msg-text {
-  font-size: 1.8rem;
-  color: rgba(0, 255, 0, 0.6);
-  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for visibility */
+  color: white; /* Text color for contrast */
+  padding: 1.6rem 2.4rem; /* Padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: fixed; /* Fixed positioning to stay at the top right */
+  top: 20%; /* 10% from the top of the viewport */
+  right: 10%; /* 10% from the right of the viewport */
+  z-index: 1000; /* Ensure it appears above other elements */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  opacity: 0; /* Initially hidden */
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease; /* Smooth fade-in and slide-in effect */
 }
 
 .success-msg--active {
-  opacity: 1;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  opacity: 1; /* Make it visible */
+  transform: translateY(0); /* Slide into position */
+}
+
+.success-msg-text {
+  font-size: 1.6rem; /* Responsive font size */
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margin */
+}
+
+.icon--success {
+  font-size: 2.4rem; /* Icon size */
+  margin-bottom: 0.8rem; /* Space between icon and text */
 }
 
 .hero {
