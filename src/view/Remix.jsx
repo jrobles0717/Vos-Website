@@ -2,6 +2,7 @@ import "../../css/index.css";
 import "../../css/style.css";
 
 import { BsYoutube } from "react-icons/bs"; // Import the YouTube icon
+import { FaSoundcloud } from "react-icons/fa"; // Import the SoundCloud icon
 import React from "react";
 import { useTranslation } from "react-i18next"; // Import useTranslation
 
@@ -39,6 +40,17 @@ const Remix = () => {
           >
             <BsYoutube size={24} className="icon--component" />{" "}
             {t("listenOnYoutube")} {/* Updated button text */}
+          </a>
+          {/* New SoundCloud button */}
+          <a
+            href="https://on.soundcloud.com/MdQp4fFCa2diaot28H"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="soundcloud-button"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <FaSoundcloud size={24} className="icon--component" /> Voş set
           </a>
         </div>
       </div>

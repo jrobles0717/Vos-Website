@@ -531,12 +531,33 @@ Large: 1.8
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+.soundcloud-button {
+  margin-top: 1rem;
+  background-color: #000000; /* YouTube's signature black */
+  color: #ffffff; /* White text for high contrast */
+  padding: 15px 30px; /* Adequate padding for button size */
+  font-size: 1.2rem; /* Appropriate font size for button text */
+  text-decoration: none; /* No underline on the text */
+  border-radius: 50px; /* Rounded corners for a modern look */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
 .youtube-button .icon--component {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.soundcloud-button .icon--component {
   margin-right: 10px; /* Space between icon and text */
 }
 
 .youtube-button:hover {
   background-color: #e60000; /* Slightly darker red on hover for visual feedback */
+}
+
+.soundcloud-button:hover {
+  background-color: #202020; /* Slightly darker black on hover for visual feedback */
 }
 
 .remix-title {
