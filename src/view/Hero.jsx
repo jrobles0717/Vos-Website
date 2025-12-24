@@ -6,6 +6,7 @@ import {
   BsFacebook,
   BsFillCheckCircleFill,
   BsInstagram,
+  BsTelephone,
   BsTiktok,
   BsYoutube,
 } from "react-icons/bs";
@@ -117,6 +118,9 @@ function Hero() {
             </div>
           </div>
           <div className="hero-icons" data-aos="fade-up" data-aos-delay="400">
+            <a href="tel:+17875982086" className="icon">
+              <BsTelephone size={22} className="icon--component" />
+            </a>
             <a
               href="https://on.soundcloud.com/NZCS9Wh211SsEW8C7"
               target="_blank"

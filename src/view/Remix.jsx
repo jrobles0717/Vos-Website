@@ -23,7 +23,11 @@ const Remix = () => {
           {/* Add AOS animation here */}
           <h1 className="remix-title">{t("remixTitle")}</h1>
           <p className="statement">
-            {t("remixDescription")}
+            {t("remixDescription")}{" "}
+            <a href="tel:+17875982086" className="phone-link">
+              {t("quotationWord")} {/* "cotización" o "quote" */}
+            </a>
+            .
             <br />
             <span
               className="booking-text"
