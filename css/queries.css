@@ -230,7 +230,8 @@
   }
 
   .hero-icons {
-    column-gap: 4.4rem;
+    column-gap: 2rem;
+    row-gap: 1.2rem;
   }
 
   .icon--component {
@@ -490,8 +491,9 @@
     }
 
     .hero-icons {
-      /* padding: 0 1.3rem; */
-      column-gap: 3rem;
+      column-gap: 1.5rem;
+      row-gap: 1rem;
+      padding: 0 1rem;
     }
 
     .icon--component {
