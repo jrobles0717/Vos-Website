@@ -28,11 +28,6 @@ const Remix = () => {
               {t("quotationWord")} {/* "cotización" o "quote" */}
             </a>
             .
-            <br />
-            <span
-              className="booking-text"
-              dangerouslySetInnerHTML={{ __html: t("contactText") }}
-            />
           </p>
           <a
             href="https://www.youtube.com/playlist?list=PLCkuhMYKUB3igFxDJFEmbjU5bSXdiCUdY" // Link to Voş's YouTube remixes

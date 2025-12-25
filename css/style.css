@@ -538,47 +538,6 @@ Large: 1.8
   text-align: center;
 }
 
-.booking-text {
-  /* text-align: center; */
-  display: block; /* Makes the span behave like a block element, starting on a new line */
-}
-
-.email-link {
-  color: #007bff;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: 600;
-  position: relative;
-  background: linear-gradient(120deg, #007bff, #00d4ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  transition: all 0.3s ease;
-}
-
-.email-link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background: linear-gradient(120deg, #007bff, #00d4ff);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.email-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.email-link:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.2);
-}
-
 .youtube-button {
   background-color: #ff0000; /* YouTube's signature red */
   color: #ffffff; /* White text for high contrast */
