@@ -21,7 +21,7 @@ i18n.use(initReactI18next).init({
         aboutVoş: "About Voş",
         aboutVoşDescription:
           "Voş, pronounced 'vosh', was born and raised in San Juan, Puerto Rico. He started writing songs at the age of 16 and, after 11 years of connecting individually with music and lyrics, he is finally exposing himself as an artist. Due to his curiosity and desire to create eccentric sound proposals, his musical genre lands in experimental music that brings together genres such as House, Soul, Electronic, Rock, R&B, and Jazz. And all of this, with his Caribbean touch.",
-        remixTitle: "REMIXES",
+        remixTitle: "House DJ",
         remixDescription:
           "Are you looking for exclusive 'house' music for your event or activity? Contact me for a",
         quotationWord: "quote",
@@ -61,7 +61,7 @@ i18n.use(initReactI18next).init({
         aboutVoş: "Sobre Voş",
         aboutVoşDescription:
           "Voş, pronunciado 'vosh', nació y creció en San Juan, Puerto Rico. Empezó a escribir canciones a los 16 años y, luego de 11 años de conectar individualmente con la música y las letras, finalmente, se está exponiendo como artista. Debido a su curiosidad y ganas de crear propuestas sonoras excéntricas, su género musical aterriza en la música experimental que reúne géneros como el House, Soul, Electrónica, Rock, R&B, y Jazz. Y todo esto, con su toque caribeño.",
-        remixTitle: "REMIXES",
+        remixTitle: "House DJ",
         remixDescription:
           "¿Estás en busca de música 'house' exclusiva para tu evento o actividad? Contactame para",
         quotationWord: "cotización",
