@@ -42,7 +42,7 @@ const Remix = () => {
           </a>
           {/* New SoundCloud button */}
           <a
-            href="https://on.soundcloud.com/MdQp4fFCa2diaot28H"
+            href="https://on.soundcloud.com/GURsD9igzRlFnvhALw"
             target="_blank"
             rel="noopener noreferrer"
             className="soundcloud-button"
